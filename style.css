@@ -100,3 +100,10 @@
  .section-bg3{
   background-color: #C8C7C7;
  }
+ .border-style{
+  border-bottom: 2px dotted;
+  width: 180px;
+  margin: auto;
+  line-height: 18px;
+  padding-bottom: 10px;
+ }
