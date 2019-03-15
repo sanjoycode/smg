@@ -124,7 +124,8 @@ body {
     line-height: 18px;
     padding-bottom: 10px;
 }
+
 /*======login box shadow=====*/
-.box{
-  box-shadow: 0px 0px 20px 3px;
+.box {
+    box-shadow: 0px 0px 20px 3px;
 }
