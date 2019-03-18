@@ -129,10 +129,5 @@ body {
 }
 /*========report page=================*/
 .background{
-    background-color: #969393;
-    border-top: 3px solid blue;
-}
-.background1{
-    background-color: #E4DEDE;
-    border-top:3px solid blue;
+    border-top: 3px solid orange;
 }
