@@ -3,7 +3,7 @@
 }
 
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("myimage/architecture-blue-sky-buildings-357271.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../myimage/architecture-blue-sky-buildings-357271.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -12,7 +12,7 @@
 }
 
 .hero1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("myimage/alabama-architecture-auburn-university-207692.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../myimage/alabama-architecture-auburn-university-207692.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -71,7 +71,7 @@ body {
 }
 
 .hero2 {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("myimage/architecture-bungalow-chimney-1569003.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../myimage/architecture-bungalow-chimney-1569003.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
