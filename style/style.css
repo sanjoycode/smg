@@ -35,6 +35,13 @@
     transform: translate(-50%, -50%);
 }
 
+.service img
+{
+    width: 200px;
+    height: 230px;
+    margin: auto;
+    display: block;
+}
 
 
 @media screen and (min-width: 758px) {
