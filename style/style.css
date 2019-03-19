@@ -94,7 +94,7 @@
     margin-top: -49px;
 }
 
-.btn-owl{
+.btn-owl {
     margin-top: -40px;
     margin-left: 40%
 }
@@ -116,17 +116,19 @@
     text-align: center;
 }
 
-.citm1{
+.citm1 {
     /*background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../myimage/computer-cooperation-coworking-1543895.jpg");
     background-size: cover;
     background-position: center;*/
     background-color: red;
 }
-.ht{
-    height:500px;
-    width:100%;
-    height:500px;
+
+.ht {
+    height: 500px;
+    width: 100%;
+    height: 500px;
 }
+
 @media screen and (min-width: 255px) {
     .center1 {
         width: 82%;
