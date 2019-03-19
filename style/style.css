@@ -35,14 +35,103 @@
     transform: translate(-50%, -50%);
 }
 
-.service img
-{
+.service img {
     width: 200px;
     height: 230px;
     margin: auto;
     display: block;
 }
 
+.img {
+    width: 200px;
+    height: 230px;
+    margin: auto;
+    display: block;
+}
+
+.cont {
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.svc-img-1 {
+    width: 200px;
+    height: 232px;
+    margin: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../myimage/slide2.jpg");
+    background-size: cover;
+
+    border-radius: 200%;
+}
+
+.svc-img-3 {
+    width: 200px;
+    height: 232px;
+    margin: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../myimage/apartment-bed-bedroom-271624.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 200%;
+}
+
+.svc-img-2 {
+    width: 200px;
+    height: 232px;
+    margin: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../myimage/access-blurred-background-cable-1629299.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 200%;
+}
+
+.btnx {
+    width: 127px;
+    text-align: center;
+    padding: 13px;
+    border-radius: 14px;
+    background-color: #d75209;
+    margin: auto;
+    margin-top: -49px;
+}
+
+.btn-owl{
+    margin-top: -40px;
+    margin-left: 40%
+}
+
+.borderx {
+    background: bisque;
+    background-color: #223a6c26;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid blue;
+    border-bottom: 1px solid blue;
+}
+
+.svc-caption {
+    width: 79%;
+    margin: auto;
+    color: #5a5656;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.citm1{
+    /*background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../myimage/computer-cooperation-coworking-1543895.jpg");
+    background-size: cover;
+    background-position: center;*/
+    background-color: red;
+}
+.ht{
+    height:500px;
+    width:100%;
+    height:500px;
+}
+@media screen and (min-width: 255px) {
+    .center1 {
+        width: 82%;
+    }
+}
 
 @media screen and (min-width: 758px) {
     .font1 {
@@ -54,13 +143,15 @@
     .font2 {
         font-size: 23px;
     }
+
+    .center1 {
+        width: auto;
+    }
 }
 
 @media screen and (max-width: 757px) {
     .font1 {
         font-size: 25px;
-        font-family: 'Roboto', sans-serif;
-
     }
 
     .font2 {
@@ -68,13 +159,8 @@
     }
 }
 
-/* font-family: 'Roboto', sans-serif;
-  font-family: 'Asap', sans-serif;*/
-body {
-    font-family: 'Open Sans', sans-serif;
-}
 
-/*======lime height======*/
+/*======line height======*/
 .p-text {
     line-height: 2rem;
 }

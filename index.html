@@ -6,10 +6,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Asap|Open+Sans|Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="style/owl/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="style/owl/owl.theme.green.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <title>index page</title>
 </head>
@@ -52,17 +54,19 @@
             <div class="col-12 p-0">
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100" src="myimage/computer-cooperation-coworking-1543895.jpg" alt="First slide">
+                        <div class="carousel-item  active">
+                            <div class=" citm1 h-25">
+                                <img class="d-block w-100 h-25" src="myimage/slide1.jpg" alt="First slide">
+                            </div>
+                        </div>
+                        <div class="carousel-item citm1">
+                            <img class="d-block w-100" src="myimage/slide2.jpg" alt="Second slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="myimage/computer-desk-electronics-374074.jpg" alt="Second slide">
+                            <img class="d-block w-100" src="myimage/slide3.jpg" alt="Third slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="myimage/adolescent-attractive-backpack-1462630.jpg" alt="Third slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="myimage/children-cute-drawing-159823.jpg" alt="forth slide">
+                            <img class="d-block w-100" src="myimage/slide4.jpg" alt="forth slide">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -91,45 +95,51 @@
         </div>
     </div> -->
     <!-- =================our service======== -->
-    <div class="service container-fluid p-5">
-        <div class="container">
+    <div class="service container-fluid pb-5 pt-5">
+        <div class="container ">
             <div class="row">
                 <div class="col-12">
                     <p class="text-center font2"><u>Our service</u></p>
-                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quam ullam, rerum voluptatibus, vero quasi explicabo. Quidem veritatis aspernatur numquam adipisci, officia, iure porro ex minus, tempora aut totam. Aliquid eligendi odit dolore eius asperiores, iure ut voluptate. Dolore ex, error! Expedita earum vitae reprehenderit voluptatem nam omnis, explicabo sequi.</p>
+                    <p class=" svc-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quam ullam, rerum voluptatibus, vero quasi explicabo. Quidem veritatis aspernatur numquam adipisci, officia, iure porro ex minus, tempora aut totam. Aliquid eligendi odit dolore eius asperiores, iure ut voluptate. Dolore ex, error! Expedita earum vitae reprehenderit voluptatem nam omnis, explicabo sequi.</p>
                 </div>
             </div>
-            <div class="row mt-3">
+            <div class="row mt-3 pb-5">
                 <div class="col-md-4 col-sm-12 mt-2">
-                    <div class="mr-2 border border-primary rounded">
-                        <img src="myimage/computer-desk-electronics-374074.jpg" class="img-fluid rounded-circle">
-                    
-                        <div class="bg-primary p-4 p-4">
-                            <p class="text-center text-white ">free computer</p>
-                            <p class="m-0 text-justify text-white pt-0 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, dolorem.</p>
+                    <div class="borderx">
+                        <div class="cont mt-3">
+                            <div class="svc-img-1"></div>
+                            <div class="btnx text-white">free computer</div>
+                        </div>
+                        <div class=" p-3">
+                            <p class="m-0 text-center ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, dolorem.iure porro ex minus, tempora aut totam.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12 mt-2">
-                    <div class="mr-2 border border-primary rounded">
-                        <img src="myimage/apartment-bed-bedroom-271624.jpg" class="img-fluid rounded-circle">
-                        <div class="bg-primary p-4">
-                            <p class="text-center text-white ">free bedroom</p>
-                            <p class="m-0 text-justify text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, dolorem.</p>
+                    <div class="borderx">
+                        <div class="cont mt-3">
+                            <div class="svc-img-3"></div>
+                            <div class="btnx text-white">free bedroom</div>
+                        </div>
+                        <div class=" p-3">
+                            <p class="m-0 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, dolorem.iure porro ex minus, tempora aut totam.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12 mt-2">
-                    <div class="mr-2 border border-primary rounded">
-                        <img src="myimage/access-blurred-background-cable-1629299.jpg" class="img-fluid rounded-circle">
-                        <div class="bg-primary p-4">
-                            <p class="text-center text-white ">free wifi</p>
-                            <p class="m-0 text-justify text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, dolorem.</p>
+                    <div class="borderx">
+                        <div class="cont mt-3">
+                            <div class="svc-img-2"></div>
+                            <div class="btnx text-white">free wifi</div>
+                        </div>
+                        <div class="p-3">
+                            <p class="m-0 text-center ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, dolorem.iure porro ex minus, tempora aut totam.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <!-- ======================================2nd background image================================ -->
     <div class="container-fluid">
@@ -146,7 +156,7 @@
         </div>
     </div>
     <!-- ==========our teacher staff========= -->
-    <div class="container mt-3">
+    <div class="teacher container mt-3">
         <div class="row">
             <div class="col-12">
                 <p class="text-center font2 mb-2"><ins>Our teacher staff</ins></p>
@@ -161,8 +171,50 @@
                 <p class="text-justify p-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis sapiente quia tempora ea modi, dolorem atque corporis sit aliquid numquam eveniet consequuntur minima, officiis officia magnam nam. Illum nostrum excepturi vitae, accusamus ab recusandae dignissimos natus nisi, fugit velit quae in ullam consectetur at laborum tempora iure necessitatibus nam hic.</p>
             </div>
         </div>
+        <!--------------carasole---------->
+        <div class="row">
+            <div class="col pt-4">
+                <div class="owl-carousel">
+                    <div>
+                        <div class="cont mt-3">
+                            <div class="svc-img-1"></div>
+                            <div class="btn-owl btnx text-white">free computer</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="cont mt-3">
+                            <div class="svc-img-2"></div>
+                            <div class="btn-owl btnx text-white">free bedroom</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="cont mt-3">
+                            <div class="svc-img-3"></div>
+                            <div class="btn-owl btnx text-white">free bedroom</div>
+                        </div>
+                    </div>
+                    <!-- <div>
+                        <div class="cont mt-1">
+                            <div class="svc-img-3"></div>
+                            <div class="btnx text-white">free bedroom</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="cont mt-2">
+                            <div class="svc-img-3"></div>
+                            <div class="btnx text-white">free bedroom</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="cont mt-3">
+                            <div class="svc-img-3"></div>
+                            <div class="btnx text-white">free bedroom</div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
     </div>
-    
     <!-- =================3rd background image================== -->
     <div class="container-fluid mt-5">
         <div class="row">
@@ -239,11 +291,37 @@
             </div>
         </div>
     </div>
+    <script src="script/jquery.min.js"></script>
+    <script src="script/owl.carousel.min.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsiveClass: true,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            dots: false,
+            autoplayHoverPause: false,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 2,
+                },
+                1000: {
+                    items: 3,
+                    loop: true
+                }
+            }
+        })
+    });
+    </script>
 </body>
 
 </html>
