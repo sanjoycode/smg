@@ -1,9 +1,40 @@
+@font-face {
+    font-family: sniglet;
+    src: url(../font/Sniglet-Regular.ttf);
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url(../font/Quicksand-Regular.ttf);
+}
+
+.f {
+    font-family: sniglet;
+    font-weight: bold;
+}
+
+.t {
+    font-family: Quicksand;
+}
+
+.hf {
+    font-size: 54px;
+}
+
+.shf {
+    font-size: 44px;
+}
+
+.s {
+    font-size: 25px;
+}
+
 .border {
     border: 2px solid red;
 }
 
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../myimage/architecture-blue-sky-buildings-357271.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.67)), url("../myimage/alabama-architecture-auburn-university-207692.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -12,7 +43,7 @@
 }
 
 .hero1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../myimage/alabama-architecture-auburn-university-207692.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.67)), url("../myimage/alabama-architecture-auburn-university-207692.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -33,6 +64,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.service {
+    background-color: #ffc603;
+}
+
 }
 
 .service img {
@@ -58,7 +95,7 @@
     width: 200px;
     height: 232px;
     margin: auto;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../myimage/slide2.jpg");
+    background: url("../myimage/slide2.jpg");
     background-size: cover;
 
     border-radius: 200%;
@@ -68,7 +105,7 @@
     width: 200px;
     height: 232px;
     margin: auto;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../myimage/apartment-bed-bedroom-271624.jpg");
+    background: url("../myimage/apartment-bed-bedroom-271624.jpg");
     background-size: cover;
     background-position: center;
     border-radius: 200%;
@@ -78,7 +115,7 @@
     width: 200px;
     height: 232px;
     margin: auto;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../myimage/access-blurred-background-cable-1629299.jpg");
+    background: url("../myimage/access-blurred-background-cable-1629299.jpg");
     background-size: cover;
     background-position: center;
     border-radius: 200%;
@@ -89,7 +126,7 @@
     text-align: center;
     padding: 13px;
     border-radius: 14px;
-    background-color: #d75209;
+    background-color: #9009d7;
     margin: auto;
     margin-top: -49px;
 }
@@ -101,11 +138,12 @@
 
 .borderx {
     background: bisque;
-    background-color: #223a6c26;
+    background-color: lightgoldenrodyellow;
     border-left: none;
     border-right: none;
     border-top: 1px solid blue;
     border-bottom: 1px solid blue;
+    border-radius: 30px;
 }
 
 .svc-caption {
@@ -116,11 +154,8 @@
     text-align: center;
 }
 
-.citm1 {
-    /*background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../myimage/computer-cooperation-coworking-1543895.jpg");
-    background-size: cover;
-    background-position: center;*/
-    background-color: red;
+.teacher {
+    background-image: url(../myimage/bg-index.jpg);
 }
 
 .ht {
