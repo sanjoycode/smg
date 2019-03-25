@@ -8,9 +8,9 @@
     src: url(../font/Quicksand-Regular.ttf);
 }
 
-@font-face{
+@font-face {
     font-family: quicksand-bold;
-    src:url(../font/Quicksand-Bold.ttf);
+    src: url(../font/Quicksand-Bold.ttf);
 }
 
 .f {
@@ -22,7 +22,7 @@
     font-family: Quicksand;
 }
 
-.tb{
+.tb {
     font-family: quicksand-bold;
 }
 
@@ -258,16 +258,17 @@
     margin: auto;
     margin-top: 14%;
     border-radius: 10px;
+    background: transparent;
 }
 
 .btny:hover {
-        background-color: #ffb70a;
+    background-color: #ffb70a;
     border-color: #ffb70a;
 
     transition: all 0.4s ease;
 }
 
-.ab-slot{
+.ab-slot {
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../myimage/about-sec-bg.jpg");
     background-size: cover;
     background-position: center;
@@ -275,6 +276,7 @@
     background-attachment: fixed;
     padding: 25% 0%;
 }
+
 .abt-img-1 {
     width: 200px;
     height: 232px;
@@ -284,6 +286,7 @@
     background-position: center;
     border-radius: 200%;
 }
+
 .abt-img-2 {
     width: 200px;
     height: 232px;
@@ -293,6 +296,7 @@
     background-position: center;
     border-radius: 200%;
 }
+
 .abt-img-3 {
     width: 200px;
     height: 232px;
@@ -302,6 +306,7 @@
     background-position: center;
     border-radius: 200%;
 }
+
 .abt-img-4 {
     width: 200px;
     height: 232px;
@@ -311,6 +316,7 @@
     background-position: center;
     border-radius: 200%;
 }
+
 .abt-img-5 {
     width: 200px;
     height: 232px;
@@ -320,6 +326,7 @@
     background-position: center;
     border-radius: 200%;
 }
+
 .abt-img-6 {
     width: 200px;
     height: 232px;
@@ -329,6 +336,7 @@
     background-position: center;
     border-radius: 200%;
 }
+
 .abt-img-7 {
     width: 200px;
     height: 232px;
@@ -338,23 +346,28 @@
     background-position: center;
     border-radius: 200%;
 }
-.success ul{
-    padding:0px;
+
+.success ul {
+    padding: 0px;
 }
-.success ul li{
+
+.success ul li {
     list-style: none;
     display: inline-block;
-    font-size:11px;
+    font-size: 11px;
 }
-.success ul li:first-child:before{
-    content:"";
-     margin:0rem;
+
+.success ul li:first-child:before {
+    content: "";
+    margin: 0rem;
 }
-.success ul li:before{
+
+.success ul li:before {
     margin-right: .5rem;
-content: "\b7";
-margin-left: .5rem;
+    content: "\b7";
+    margin-left: .5rem;
 }
+
 /*=====our athority===================*/
 .section-bg1 {
     background-color: #BCBCBC;
@@ -377,6 +390,19 @@ margin-left: .5rem;
     margin: auto;
     line-height: 18px;
     padding-bottom: 10px;
+}
+
+.staff ul li {
+    list-style: none;
+    background-color: white;
+}
+
+.fiture-img img {
+    width: 200px;
+    height: 224px;
+    border-radius: 344%;
+    display: block;
+    margin: auto;
 }
 
 /*======login box shadow=====*/
