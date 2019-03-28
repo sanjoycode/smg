@@ -404,7 +404,60 @@
     display: block;
     margin: auto;
 }
-
+.staff-nt-img-1{
+    width: 200px;
+    height: 232px;
+    margin: auto;
+    background: url("../myimage/non-teaching/nt-1.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 200%;
+}
+.staff-nt-img-2{
+    width: 200px;
+    height: 232px;
+    margin: auto;
+    background: url("../myimage/non-teaching/nt-2.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 200%;
+}
+.staff-nt-img-3{
+    width: 200px;
+    height: 232px;
+    margin: auto;
+    background: url("../myimage/non-teaching/nt-3.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 200%;
+}
+.staff-nt-img-4{
+    width: 200px;
+    height: 232px;
+    margin: auto;
+    background: url("../myimage/non-teaching/nt-4.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 200%;
+}
+.staff-nt-img-5{
+    width: 200px;
+    height: 232px;
+    margin: auto;
+    background: url("../myimage/non-teaching/nt-5.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 200%;
+}
+.staff-nt-img-6{
+    width: 200px;
+    height: 232px;
+    margin: auto;
+    background: url("../myimage/non-teaching/nt-6.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 200%;
+}
 /*======login box shadow=====*/
 .box {
     box-shadow: 0px 0px 20px 3px;
