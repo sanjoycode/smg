@@ -4,43 +4,130 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>User pannel</title>
-    <link rel="stylesheet" type="text/css" href="style\aos.css">
-    <link rel="stylesheet" type="text/css" href="style\bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="style\icofont\icofont.min.css">
+    <link rel="stylesheet" type="text/css" href="css\aos.css">
+    <link rel="stylesheet" type="text/css" href="css\bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css\icofont\icofont.min.css">
     <style type="text/css">
-    	.head-search input,button{
-    		height:30px;
-    	}
-    	header .row{
-    		padding: 5px 0px;
-    	}
+    .head-search input,
+    button {
+        height: 30px;
+    }
+
+    header .row {
+        padding: 5px 0px;
+    }
     </style>
 </head>
 
 <body>
-    <header class="container-fludi bg-dark text-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3">
-                    <p class="m-0">School Backend</p>
-                </div>
-                <div class="col-sm-3">
-                </div>
-                <div class="col-sm-3">
-                    <form class="head-search input-group" action="" method="post">
-                        <input class="form-control" type="search" name="">
-                        <button class="btn bg-white btn-small"><i class="icofont-search-2"></i></button>
-                    </form>
-                    <img src="">
+    <div style="position: relative;">
+        <nav class=" bg-dark text-light fixed-top">
+            <div class="container">
+                <div class="row my-3">
+                    <div class="col-8 col-md-6 col-lg-7">
+                        <i class="d-inline-block mr-3 icofont-navigation-menu"></i>
+                        <span class="m-0">School Backend</span>
+                    </div>
+                    <div class="col-4 col-md-6 col-lg-5">
+                        <div class="d-flex flex-row">
+                            <form class="head-search form-inline d-none d-md-block" action="" method="post">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+                                    <div class="input-group-prepend">
+                                        <button class="input-group-text rounded-right"><i class="icofont-search-2"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                            <img src="myimage/dp.png" class="d-block ml-auto m-sm-l-0" style="width: 30px;">
+                        </div>
+                    </div>
                 </div>
             </div>
+    </div>
+    </nav>
+    </div>
+    <div class="container-fludi dashbord">
+        <div class="col-md-3 bg-warning sideber sticky-top " style="position: fixed;height:100%;top:62px;">
+            <ul class="" style="list-style: none;">
+                <li class="treeview">
+                    <a href="#">
+                        <i class=""></i>
+                        <span></span>
+                        <i class="icofont-rounded-right"></i>
+                    </a>
+                    <ul class="tree-menu">
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class=""></i>
+                        <span></span>
+                        <i class="icofont-rounded-right"></i>
+                    </a>
+                    <ul class="tree-menu">
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class=""></i>
+                        <span></span>
+                        <i class="icofont-rounded-right"></i>
+                    </a>
+                    <ul class="tree-menu">
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class=""></i>
+                        <span></span>
+                        <i class="icofont-rounded-right"></i>
+                    </a>
+                    <ul class="tree-menu">
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class=""></i>
+                        <span></span>
+                        <i class="icofont-rounded-right"></i>
+                    </a>
+                    <ul class="tree-menu">
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class=""></i>
+                        <span></span>
+                        <i class="icofont-rounded-right"></i>
+                    </a>
+                    <ul class="tree-menu">
+                    </ul>
+                </li>
+            </ul>
         </div>
-    </header>
-    <div>
+        <div class="col-xs-12 col-md-9 bg-danger content" style="float: right;height:20000px;margin-top: 62px">
+            content content content
+        </div>
     </div>
     <script src="script/aos.js"></script>
     <script src="script/bootstrap.min.js"></script>
     <script src="script/jquery.min.js"></script>
+    <script type="text/javascript">
+    function sidebar() {
+        var width = $(window).width();
+        if (width < 768) {
+            $(".sideber").addClass('d-none');
+        } else if (width > 767) {
+            $(".sideber").removeClass('d-none');
+        }
+    }
+    $(document).ready(function() {
+        sidebar();
+        $(window).resize(function() {
+            sidebar();
+        });
+    });
+    </script>
 </body>
 
 </html>
