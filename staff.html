@@ -358,7 +358,7 @@
                 }
             }
         })
-        $('.accordination:first-child')
+
         $('.accordination').each(function() {
 
             // bind click event handeler
@@ -368,6 +368,8 @@
                 var thisHead = $(this);
                 var thisPlus = $(thisHead).hasClass("accordinationPlus");
                 var thisPannel = $(thisHead).siblings(".accordination-pannel");
+
+                console.log(thisHead);
 
                 // toggle accordinationPlus
                 if (thisHead.hasClass("active")) {

@@ -1,43 +1,66 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>test</title>
-    <style type="text/css">
-    .h {
-        width: 100%;
-        background: red;
-        padding: 5px;
-    }
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.a{
+  width:200px;
+  height:200px;
+  display: inline-block;
+  margin:20px;
+  text-align: center;
+}
 
-    .sb {
-        width: 25%;
-        background: navy;
-        height: 100%;
-        float: left;
-        position: fixed;
-    }
-    .mc{
-    	float: left;
-    	background: green;
-    	width: 75%;
-    	position: relative;
-    }
-    </style>
+.b{
+  background-color: red
+}
+.c{
+  background-color: yellow
+}
+.d{
+  background-color: #1dcfe4
+}
+.e{
+  background-color: blue
+}
+
+.b:hover{
+  background: black
+}
+.c:active{
+  background: navy;
+}
+.d:focus-within{
+  background: green;
+}
+
+
+</style>
 </head>
-
 <body>
-    <div class="h">
-        a
-    </div>
 
-        <div class="sb">
-            b
-        </div>
-        <div class="mc">
-        	c
-        </div>
+<div class="a b">1</div>
+<div class="a c">2</div>
+<a class="a d">3</a>
+<div class="a e">4</div>
 
+<script src="script/jquery.min.js"></script>
+<script>
+// function openNav() {
+//   document.getElementById("mySidebar").style.width = "250px";
+//   document.getElementById("main").style.marginLeft = "250px";
+// }
+
+// function closeNav() {
+//   document.getElementById("mySidebar").style.width = "0";
+//   document.getElementById("main").style.marginLeft= "0";
+// }
+$(".d").focusin(function(){
+  $('.d').addClass('e');
+  console.log('oj');
+});
+</script>
+   
 </body>
-
-</html>
+</html> 
