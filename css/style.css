@@ -83,7 +83,6 @@
     background-color: #ffc603;
 }
 
-}
 
 .service img {
     width: 200px;
@@ -257,7 +256,7 @@
     display: block;
     margin: auto;
     margin-top: 14%;
-    margin-bottom:30%;
+    margin-bottom: 30%;
     border-radius: 10px;
     background: transparent;
 }
@@ -405,7 +404,8 @@
     display: block;
     margin: auto;
 }
-.staff-nt-img-1{
+
+.staff-nt-img-1 {
     width: 200px;
     height: 232px;
     margin: auto;
@@ -414,7 +414,8 @@
     background-position: center;
     border-radius: 200%;
 }
-.staff-nt-img-2{
+
+.staff-nt-img-2 {
     width: 200px;
     height: 232px;
     margin: auto;
@@ -423,7 +424,8 @@
     background-position: center;
     border-radius: 200%;
 }
-.staff-nt-img-3{
+
+.staff-nt-img-3 {
     width: 200px;
     height: 232px;
     margin: auto;
@@ -432,7 +434,8 @@
     background-position: center;
     border-radius: 200%;
 }
-.staff-nt-img-4{
+
+.staff-nt-img-4 {
     width: 200px;
     height: 232px;
     margin: auto;
@@ -441,7 +444,8 @@
     background-position: center;
     border-radius: 200%;
 }
-.staff-nt-img-5{
+
+.staff-nt-img-5 {
     width: 200px;
     height: 232px;
     margin: auto;
@@ -450,7 +454,8 @@
     background-position: center;
     border-radius: 200%;
 }
-.staff-nt-img-6{
+
+.staff-nt-img-6 {
     width: 200px;
     height: 232px;
     margin: auto;
@@ -459,6 +464,7 @@
     background-position: center;
     border-radius: 200%;
 }
+
 /*======login box shadow=====*/
 .box {
     box-shadow: 0px 0px 20px 3px;
@@ -468,129 +474,157 @@
 .background {
     border-top: 3px solid orange;
 }
-.red{
-    background:red;
+
+.red {
+    background: red;
 }
+
 /*==========User pannel=============*/
-.head-search input,
-    button {
-        height: 30px;
-    }
+.head-search input {
+    height: 30px;
+}
 
-    header .row {
-        padding: 5px 0px;
-    }
+header .row {
+    padding: 5px 0px;
+}
 
-    .navigation {
-        box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
-    }
+.navigation {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+}
 
-    .sidebar {
-        position: fixed;
-        height: 100%;
-        top: 62px;
-        overflow: scroll;
-        transition: 0.5s;
-    }
+.sidebar {
+    position: fixed;
+    height: 100%;
+    top: 62px;
+    overflow: scroll;
+    transition: 0.5s;
+}
 
-    .sidebar_accordination {
-        list-style: none;
-        color: white;
-    }
+.sidebar_accordination {
+    list-style: none;
+    color: white;
+}
 
-    .sidebar_accordination p {
-        padding: 21px 19px;
-        margin: 0px;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
-    }
+.sidebar_accordination p {
+    padding: 21px 19px;
+    margin: 0px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+}
 
-    .tree_head {
-        padding: 14px 20px;
-        position: relative;
-        font-size: 18px
-    }
+.tree_head {
+    padding: 14px 20px;
+    position: relative;
+    font-size: 18px
+}
 
-    .sidebar_accordination li a {
-        color: white;
-        text-decoration: none;
-    }
+.sidebar_accordination li a {
+    color: white;
+    text-decoration: none;
+}
 
-    .tree_head:hover {
-        background: black;
-        border-left: 3px solid #03FBC7;
-        color: #2098D1;
-        cursor: pointer;
-        transition: 0.3s;
+.tree_head:hover {
+    background: black;
+    border-left: 3px solid #03FBC7;
+    color: #2098D1;
+    cursor: pointer;
+    transition: 0.3s;
 
-    }
+}
 
-    .sidebar_accordination li a i:last-child {
-        position: absolute;
-        right: 5%;
-        top: 22px;
-    }
+.sidebar_accordination li a i:last-child {
+    position: absolute;
+    right: 5%;
+    top: 22px;
+}
 
-    .tree_pannel {
-        list-style: none;
-        padding: 0px;
-        background: #606060;
-    }
+.tree_pannel {
+    list-style: none;
+    padding: 0px;
+    background: #606060;
+}
 
-    .tree_pannel li {
-        padding: 10px 23px 8px;
-        color: #b7b1b1;
-    }
+.tree_pannel li {
+    padding: 10px 23px 8px;
+    color: #b7b1b1;
+}
 
-    .tree_pannel li a {
-        padding-left: 5px;
-        font-family: calibri;
-        color: #b7b1b1;
-    }
+.tree_pannel li a {
+    padding-left: 5px;
+    font-family: calibri;
+    color: #b7b1b1;
+}
 
-    .tree_pannel li:lastchild {
-        padding-bottom: 10px;
-    }
+.tree_pannel li:lastchild {
+    padding-bottom: 10px;
+}
 
-    .tree_pannel li:firstchild {
-        padding-top: 0px;
-    }
-     .tree_pannel li:hover  {
-        color:#43C2FF;
-        transition: 0.3s;
-     }
-     .tree_pannel li:hover a{
-        color:#43C2FF;
-        transition: 0.3s;
-     }
+.tree_pannel li:firstchild {
+    padding-top: 0px;
+}
 
-    .focus {
-        background: black;
-        border-left: 3px solid #03FBC7;
-        color: #2098D1;
-    }
+.tree_pannel li:hover {
+    color: #43C2FF;
+    transition: 0.3s;
+}
 
-    .dropdown_pannel {
-        position: absolute;
-        z-index: 1;
-        background-color: aqua;
-        right: 10px;
-        top: 55px;
-        border-radius: 5px;
-        box-shadow: 0px 0px 12px #595858;
-    }
+.tree_pannel li:hover a {
+    color: #43C2FF;
+    transition: 0.3s;
+}
 
-    .arrow {
-        color: aqua;
-        position: absolute;
-        right: 9px;
-        top: 16px;
-        font-size: 42px;
-        z-index: 2
-    }
+.focus {
+    background: black;
+    border-left: 3px solid #03FBC7;
+    color: #2098D1;
+}
 
-    @media screen and (max-width: 769px) {
-        .small_font {
-            font-size: 15px;
-        }
+.dropdown_pannel {
+    position: absolute;
+    z-index: 1;
+    background-color: aqua;
+    right: 10px;
+    top: 55px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 12px #595858;
+}
+
+.arrow {
+    color: aqua;
+    position: absolute;
+    right: 9px;
+    top: 16px;
+    font-size: 42px;
+    z-index: 2
+}
+
+.dashbord
+{
+    padding-top: 80px;
+    background: #d4d4d4
+}
+
+@media screen and (max-width: 769px) {
+    .small_font {
+        font-size: 15px;
     }
-    /*=======admin dash======*/
+}
+
+/*=======admin dash======*/
+
+
+.text-sub {
+    color: #a8a8b2;
+}
+
+.das-icon-pannel {
+    background: white;
+}
+
+.das-icon-setting {
+    background: rgba(91, 43, 248, 0.14);
+    padding: 16px;
+    border-radius: 250px;
+}
+@media screen and (max-width ){
+    
+}

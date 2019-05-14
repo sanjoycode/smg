@@ -8,11 +8,8 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/owl/owl.carousel.min.css">
-    <link rel="stylesheet" type="text/css" href="css/owl/owl.theme.default.min.css">
-    <link rel="stylesheet" type="text/css" href="css/owl/owl.theme.green.min.css">
-    <link rel="stylesheet" type="text/css" href="css/aos.css">
-    <link rel="stylesheet" type="text/css" href="css/all.min.css">
     <link rel="stylesheet" type="text/css" href="css/icofont/icofont.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <title>staff page</title>
 </head>
 
@@ -98,7 +95,7 @@
                                 <i class="icofont-simple-down text-right accordinationPlus" style="font-size:35px;float: right; margin-top: -2px;"></i>
                                 <i class="icofont-simple-up text-right accordinationMinus d-none" style="font-size:35px;float: right; margin-top: -2px;"></i>
                             </div>
-                            <div class="accordination-pannel d-none">
+                            <div class="accordination-pannel">
                                 <div class="row  p-sm-1  m-1 text-center text-md-left  ">
                                     <div class="col-md-6 col-sm-12 fiture-img p-1 pt-4 pb-3">
                                         <img src="myimage/teachers/teacher-1.jpg" class="img-fluid">
@@ -125,18 +122,18 @@
                                     </div>
                                     <div class="col-md-6 col-sm-12 pl-4 pt-5">
                                         <p class="t s mb-0 pt-0 "><b>Ethina Hunt</b></p>
-                                        <p class="text-muted "><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor officiis, assumenda minus ipsum dolor sit amet, consectetur adipisicing elit. Dolor officiis, assumenda minus  voluptatem repellat consequatur nulla. Tenetur sapiente earum laborum assumenda molestias, laudantium quae iusto quasi .</small></p>
+                                        <p class="text-muted "><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor officiis, assumenda minus ipsum dolor sit amet, consectetur adipisicing elit. Dolor officiis, assumenda minus voluptatem repellat consequatur nulla. Tenetur sapiente earum laborum assumenda molestias, laudantium quae iusto quasi .</small></p>
                                     </div>
                                 </div>
                             </div>
                         </li>
                         <li class="mb-3">
-                            <div class=" bg-light p-2 border accordination-head "style="cursor: pointer;">
+                            <div class=" bg-light p-2 border accordination-head " style="cursor: pointer;">
                                 <p class="d-inline-block m-0  text-primary pl-2">Comarce Department</p>
                                 <i class="icofont-simple-down text-right accordinationPlus" style="font-size:35px;float: right; margin-top: -2px;"></i>
                                 <i class="icofont-simple-up text-right accordinationMinus d-none" style="font-size:35px;float: right; margin-top: -2px;"></i>
                             </div>
-                            <div class="accordination-pannel d-none">
+                            <div class="accordination-pannel">
                                 <div class="row  p-sm-1  m-1 text-center text-md-left  ">
                                     <div class="col-md-6 col-sm-12 fiture-img p-1 pt-4 pb-3">
                                         <img src="myimage/blog/blog-1.jpg" class="img-fluid">
@@ -169,12 +166,12 @@
                             </div>
                         </li>
                         <li class="mb-3">
-                            <div class=" bg-light p-2 border accordination-head "style="cursor: pointer;">
+                            <div class=" bg-light p-2 border accordination-head " style="cursor: pointer;">
                                 <p class="d-inline-block m-0  text-primary pl-2">Science Deaprtment</p>
                                 <i class="icofont-simple-down text-right accordinationPlus" style="font-size:35px;float: right; margin-top: -2px;"></i>
                                 <i class="icofont-simple-up text-right accordinationMinus d-none" style="font-size:35px;float: right; margin-top: -2px;"></i>
                             </div>
-                            <div class="accordination-pannel d-none">
+                            <div class="accordination-pannel">
                                 <div class="row  p-sm-1  m-1 text-center text-md-left  ">
                                     <div class="col-md-6 col-sm-12 fiture-img p-1 pt-4 pb-3">
                                         <img src="myimage/blog/blog-1.jpg" class="img-fluid">
@@ -335,63 +332,37 @@
     <script src="script/bootstrap.min.js"></script>
     <script src="script/aos.js"></script>
     <script type="text/javascript">
-    $(document).ready(function() {
-        $('.owl-carousel').owlCarousel({
-            loop: true,
-            margin: 10,
-            responsiveClass: true,
-            autoplay: true,
-            autoplayTimeout: 2000,
-            dots: false,
-            autoplayHoverPause: false,
-            responsive: {
-                0: {
-                    items: 1,
-                    nav: true
-                },
-                600: {
-                    items: 2,
-                },
-                1000: {
-                    items: 3,
-                    loop: true
+        $(document).ready(function() {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                dots: false,
+                autoplayHoverPause: false,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    600: {
+                        items: 2,
+                    },
+                    1000: {
+                        items: 3,
+                        loop: true
+                    }
                 }
-            }
-        })
+            })
 
-        $('.accordination').each(function() {
+            
 
-            // bind click event handeler
-            $(".accordination-head").click(function(e) {
-                // get elements
-                var thisAccordination = $(this).parent().parent();
-                var thisHead = $(this);
-                var thisPlus = $(thisHead).hasClass("accordinationPlus");
-                var thisPannel = $(thisHead).siblings(".accordination-pannel");
-
-                console.log(thisHead);
-
-                // toggle accordinationPlus
-                if (thisHead.hasClass("active")) {
-                    thisHead.removeClass("active");
-                    thisHead.children(".accordinationMinus").hide();
-                    thisHead.children(".accordinationPlus").show();
-                    thisPannel.removeClass("active");
-                    thisPannel.slideUp("slow");
-
-                } else {
-                    thisHead.addClass("active");
-                    thisPannel.addClass("active");
-                    thisHead.children(".accordinationMinus").removeClass("d-none").show();
-                    thisHead.children(".accordinationPlus").hide();
-                    thisPannel.removeClass("d-none").show("slow");
-                }
-            });
         });
+        // AOS.init();
 
-    });
-    // AOS.init();
     </script>
+<script type="text/javascript" src="script/script.js"></script>
 </body>
 
 </html>

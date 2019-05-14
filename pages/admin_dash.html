@@ -1,124 +1,281 @@
 <!DOCTYPE html>
-<html  lang="energy-water">
-<head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="..\css\bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"> 
-    <link rel="stylesheet" type="text/css" href="..\css\style.css">
-	<title>Admin dahbord</title>
-	<style>
-		body{
-			background:#ecedee;
-		}
-		.text-sub{
-			color:#a8a8b2;
-		}
-		.das-icon-pannel{
-			background:white;
-		}
-		.das-icon-setting{
-			width: 57%;
-			background:rgba(91, 43, 248, 0.14);
-			padding: 16px;
-			border-radius: 50px;
-		}
-	</style>
-</head>
-<body>
-	<div class="container p-5">
-		<div class="row">
-			<div class="col col-md-6 py-3">
-				<div class="das-icon-pannel p-4 px-5 rounded ">
-					<div class="row">
-						<div class="col">
-							<div class="das-icon-setting "  >
-								<img class="img-fluid" src="../myimage/icon/student.png">
-							</div>
-						</div>
-						<div class="col text-right">
-							<p class="text-sub">Students</p>
-							<p class="h3 ">10000</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col col-md-6 py-3">
-				<div class="das-icon-pannel p-4 px-5 rounded ">
-					<div class="row">
-						<div class="col">
-							<div class="das-icon-setting "  >
-								<img class="img-fluid" src="../myimage/icon/teacher.png">
-							</div>
-						</div>
-						<div class="col text-right">
-							<p class="text-sub">Teachers</p>
-							<p class="h3 ">152</p>
-						</div>
-					</div>
-				</div>
-			</div><div class="col col-md-6 py-3">
-				<div class="das-icon-pannel p-4 px-5 rounded ">
-					<div class="row">
-						<div class="col">
-							<div class="das-icon-setting "  >
-								<img class="img-fluid" src="../myimage/icon/parent.png">
-							</div>
-						</div>
-						<div class="col text-right">
-							<p class="text-sub">Parents</p>
-							<p class="h3 ">5000</p>
-						</div>
-					</div>
-				</div>
-			</div><div class="col col-md-6 py-3">
-				<div class="das-icon-pannel p-4 px-5 rounded ">
-					<div class="row">
-						<div class="col">
-							<div class="das-icon-setting "  >
-								<img class="img-fluid" src="../myimage/icon/other-staff.png">
-							</div>
-						</div>
-						<div class="col text-right">
-							<p class="text-sub">Other Staffs</p>
-							<p class="h3 ">10</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col rounded m-3 py-5" style="background:#546ca9">
-				<div class="text-center mx-auto text-light w-50">
-					<h3 class="mb-4 fab fa-facebook-f"></h3>
-                    <p class="mb-1">facebook likes</p>
-                    <h3>12,504</h3>
-				</div>
-			</div>
-            
-            <div class="col rounded m-3 py-5" style="background:#546ca9">
-				<div class="text-center mx-auto text-light w-50">
-					<h3 class="mb-4 fab fa-twitter"></h3>
-                    <p class="mb-1">twitter Followers</p>
-                    <h3>18,704</h3>
-				</div>
-			</div>
-            <div class="col rounded m-3 py-5" style="background:#f81b1b">
-				<div class="text-center mx-auto text-light w-50">
-					<h3 class="mb-4 fab fa-google-plus-g"></h3>
-                    <p class="mb-1">Google followers</p>
-                    <h3>12,504</h3>
-				</div>
-			</div>
-            <div class="col rounded m-3 py-5" style="background:#1565c0">
-				<div class="text-center mx-auto text-light w-50">
-					<h3 class="mb-4 fab fa-linkedin-in"></h3>
-                    <p class="mb-1">Linked in Followers</p>
-                    <h3>15,490</h3>
-				</div>
-			</div>
-		</div>
-	</div>
+<html lang="en-US">
 
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/icofont/icofont.min.css">
+    <title>User pannel</title>
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+    <div style="position: relative;">
+        <nav class=" navigation bg-dark text-light fixed-top">
+            <div class="container">
+                <div class="row my-3">
+                    <div class="menu_icon col-8 col-md-6 col-lg-7">
+                        <span class="m-0">School Backend</span>
+                    </div>
+                    <div class="col-4 col-md-6 col-lg-5">
+                        <div class="d-flex flex-row">
+                            <form class="head-search form-inline d-none d-md-block" action="" method="post">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+                                    <div class="input-group-prepend">
+                                        <button class="input-group-text rounded-right" style="height: 30px"><i class="icofont-search-2"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                            <img src="../myimage/dp.png" class="dropdown d-block ml-auto m-sm-l-0 rounded-circle" style="width: 30px;height:30px;cursor: pointer;">
+                            <i class=" arrow icofont-caret-up"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown_pannel p-0">
+                <div class="container">
+                    <div class="row pt-2 pt-md-2 pt-lg-3 px-3 px-sm-0 px-lg-3">
+                        <div class="col-6 pl-2 pl-md-0 p-0 ">
+                            <img src="../myimage/dp.png" class="img-fluid rounded">
+                        </div>
+                        <div class="col-6 p-0 pl-2 pl-md-3 pt-2 ">
+                            <p class="h4 md-p user_name small_font">Amigo uno</p>
+                            <p class="h5 sm-p Designation small_font">Admin</p>
+                        </div>
+                    </div>
+                    <div class="row p-3 text-center">
+                        <a href="#" class="col rounded-left bg-warning p-1" style="cursor: pointer;text-decoration: none;">
+                            Profile
+                        </a>
+                        <a href="#" class="col ml-1 rounded-right bg-warning p-1" style="cursor: pointer;text-decoration: none;">
+                            Logout
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container-fludi dashbord">
+        <div class="col-md-3 d-md-block bg-dark sidebar sticky-top p-0">
+            <ul class="p-0 sidebar_accordination">
+                <p>Current session :2019-2020</p>
+                <li>
+                    <div class="tree_head">
+                        <div href="#">
+                            <i class=""></i>
+                            <span>Student Informaton</span>
+                            <i class="icofont-rounded-right "></i>
+                        </div>
+                    </div>
+                    <ul class="tree_pannel">
+                        <li class="icofont-double-right"><a href="student_info/student_info(not using).html">Student Detailse</a></li>
+                        <li class="icofont-double-right"><a href="student_info/student_history.html">Student History</a></li>
+                        <li class="icofont-double-right"><a href="#">Admission</a></li>
+                        <li class="icofont-double-right"><a href="#">Timetable</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="tree_head">
+                        <div href="#">
+                            <i class=""></i>
+                            <span>Attendance</span>
+                            <i class="icofont-rounded-right "></i>
+                        </div>
+                    </div>
+                    <ul class="tree_pannel">
+                        <li class="icofont-double-right"><a href="#">Student Attendance</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="tree_head">
+                        <div href="#">
+                            <i class=""></i>
+                            <span>Academic</span>
+                            <i class="icofont-rounded-right "></i>
+                        </div>
+                    </div>
+                    <ul class="tree_pannel">
+                        <li class="icofont-double-right"><a href="academic/Add_time_table.html">Add timetable</a></li>
+                        <li class="icofont-double-right"><a href="academic/add_class.html">Add class</a></li>
+                        <li class="icofont-double-right"><a href="academic/add_section.html">Add section</a></li>
+                        <li class="icofont-double-right"><a href="academic/add_subject.html">Add subject</a></li>
+                        <li class="icofont-double-right"><a href="academic/asign_subject.html">Asign subject</a></li> 
+                        <li class="icofont-double-right"><a href="academic/asign_classteacher.html">Asign class Teacher</a></li>  
+                    </ul>
+                </li>
+                <li>
+                    <div class="tree_head">
+                        <div href="#">
+                            <i class=""></i>
+                            <span>Staff Management</span>
+                            <i class="icofont-rounded-right "></i>
+                        </div>
+                    </div>
+                    <ul class="tree_pannel">
+                        <li class="icofont-double-right"><a href="hr/add_staff.html">Add Staff</a></li>
+                        <li class="icofont-double-right"><a href="hr/attendance.html">Attendance</a></li>
+                        <li class="icofont-double-right"><a href="hr/attendance_report.html">Attendance report</a></li>
+                        <li class="icofont-double-right"><a href="hr/deperment.html">Department</a></li>
+                        <li class="icofont-double-right"><a href="hr/designtation.html">Designation</a></li>  
+                    </ul>
+                </li>
+                <li>
+                    <div class="tree_head">
+                        <div href="#">
+                            <i class=""></i>
+                            <span>Transport</span>
+                            <i class="icofont-rounded-right "></i>
+                        </div>
+                    </div>
+                    <ul class="tree_pannel">
+                        <li class="icofont-double-right"><a href="transport/add_wahicale.html">Add Vehicale</a></li>
+                        <li class="icofont-double-right"><a href="transport/assign_vehicale.html">Asign Vehicale</a></li> 
+                    </ul>
+                </li>
+                <li>
+                    <div class="tree_head">
+                        <div href="#">
+                            <i class=""></i>
+                            <span>Communication</span>
+                            <i class="icofont-rounded-right "></i>
+                        </div>
+                    </div>
+                    <ul class="tree_pannel">
+                        <li class="icofont-double-right"><a href="communication/notice bord.html">Notice Board</a></li>
+                        <li class="icofont-double-right"><a href="communication/post_new_notice.html">Create Notice</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="tree_head">
+                        <div href="#">
+                            <i class=""></i>
+                            <span>Settings</span>
+                            <i class="icofont-rounded-right "></i>
+                        </div>
+                    </div>
+                    <ul class="tree_pannel">
+                        <li class="icofont-double-right"><a href="system_settings/system_setting.html">System Settings</a></li>                                    
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-md-9 p-3 dashbord float-md-right" style="margin-top: 62px;background: #d4d4d4">
+            <div class="container p-0 p-lg-3">
+                <div class="row">
+                    <div class="col-12 col-sm-6 py-3">
+                        <div class="das-icon-pannel p-4 px-5 rounded ">
+                            <div class="row">
+                                <div class=" col-6">
+                                    <div class="das-icon-setting ">
+                                        <img class="img-fluid" src="../myimage/icon/student.png">
+                                    </div>
+                                </div>
+                                <div class="col-6 text-right">
+                                    <p classcol-sm="t-md-6ext-sub">Students</p>
+                                    <p class="h3 ">10000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 py-3">
+                        <div class="das-icon-pannel p-4 px-5 rounded ">
+                            <div class="row">
+                                <div class=" col-6">
+                                    <div class="das-icon-setting ">
+                                        <img class="img-fluid" src="../myimage/icon/teacher.png">
+                                    </div>
+                                </div>
+                                <div class="col-6 text-right">
+                                    <p classcol-sm="t-md-6ext-sub">Teachers</p>
+                                    <p class="h3 ">152</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 py-3">
+                        <div class="das-icon-pannel p-4 px-5 rounded ">
+                            <div class="row">
+                                <div class=" col-6">
+                                    <div class="das-icon-setting ">
+                                        <img class="img-fluid" src="../myimage/icon/parent.png">
+                                    </div>
+                                </div>
+                                <div class="col-6 text-right">
+                                    <p classcol-sm="t-md-6ext-sub">Parents</p>
+                                    <p class="h3 ">5000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 py-3">
+                        <div class="das-icon-pannel p-4 px-5 rounded ">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="das-icon-setting ">
+                                        <img class="img-fluid" src="../myimage/icon/other-staff.png">
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-6 text-right">
+                                    <p class="text-sub">Other Staffs</p>
+                                    <p class="h3 ">10</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-sm-6 col-lg-3 col-12 my-3" >
+                        <div class="rounded py-5" style="background:#546ca9">
+                            <div class="text-center mx-auto text-light w-50">
+                                <h3 class="mb-4 fab fa-facebook-f"></h3>
+                                <p class="mb-1">Followers</p>
+                                <h3>12,504</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3 col-12 my-3" >
+                        <div class="rounded py-5" style="background:#90eaf7">
+                            <div class="text-center mx-auto text-light w-50">
+                                <h3 class="mb-4 fab fa-twitter"></h3>
+                                <p class="mb-1">Followers</p>
+                                <h3>18,704</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 col-12 my-3" >
+                        <div class="rounded py-5" style="background:#f81b1b">
+                            <div class="text-center mx-auto text-light w-50">
+                                <h3 class="mb-4 fab fa-google-plus-g"></h3>
+                                <p class="mb-1">followers</p>
+                                <h3>12,504</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 col-12 my-3" >
+                        <div class="rounded py-5" style="background:#1565c0">
+                            <div class="text-center mx-auto text-light w-50">
+                                <h3 class="mb-4 fab fa-linkedin-in"></h3>
+                                <p class="mb-1">Followers</p>
+                                <h3>15,490</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../script/aos.js"></script>
+    <script src="../script/bootstrap.min.js"></script>
+    <script src="../script/jquery.min.js"></script>
+    <script type="text/javascript" src="../script/script.js" ></script>
 </body>
+
 </html>

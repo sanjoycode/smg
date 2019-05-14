@@ -5,14 +5,11 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"> 
-    <link rel="stylesheet" type="text/css" href="css/icofont/icofont.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../../css/icofont/icofont.min.css">
     <title>User pannel</title>
-    <style type="text/css">
-    
-    </style>
 </head>
 
 <body>
@@ -29,11 +26,11 @@
                                 <div class="input-group">
                                     <input type="text" class="form-control" placeholder="Username" aria-label="Username">
                                     <div class="input-group-prepend">
-                                        <button class="input-group-text rounded-right"><i class="icofont-search-2" style="height: 30px"></i></button>
+                                        <button class="input-group-text rounded-right" style="height: 30px"><i class="icofont-search-2"></i></button>
                                     </div>
                                 </div>
                             </form>
-                            <img src="myimage/dp.png" class="dropdown d-block ml-auto m-sm-l-0 rounded-circle" style="width: 30px;height:30px;cursor: pointer;">
+                            <img src="../../myimage/dp.png" class="dropdown d-block ml-auto m-sm-l-0 rounded-circle" style="width: 30px;height:30px;cursor: pointer;">
                             <i class=" arrow icofont-caret-up"></i>
                         </div>
                     </div>
@@ -43,7 +40,7 @@
                 <div class="container">
                     <div class="row pt-2 pt-md-2 pt-lg-3 px-3 px-sm-0 px-lg-3">
                         <div class="col-6 pl-2 pl-md-0 p-0 ">
-                            <img src="myimage/dp.png" class="img-fluid rounded">
+                            <img src="../../myimage/dp.png" class="img-fluid rounded">
                         </div>
                         <div class="col-6 p-0 pl-2 pl-md-3 pt-2 ">
                             <p class="h4 md-p user_name small_font">Amigo uno</p>
@@ -51,12 +48,12 @@
                         </div>
                     </div>
                     <div class="row p-3 text-center">
-                                <a href="#" class="col rounded-left bg-warning p-1" style="cursor: pointer;text-decoration: none;">
-                                    Profile
-                                </a>
-                                <a href="#" class="col ml-1 rounded-right bg-warning p-1" style="cursor: pointer;text-decoration: none;">
-                                    Logout
-                                </a>
+                        <a href="#" class="col rounded-left bg-warning p-1" style="cursor: pointer;text-decoration: none;">
+                            Profile
+                        </a>
+                        <a href="#" class="col ml-1 rounded-right bg-warning p-1" style="cursor: pointer;text-decoration: none;">
+                            Logout
+                        </a>
                     </div>
                 </div>
             </div>
@@ -113,14 +110,61 @@
                 </li>
             </ul>
         </div>
-        <div class="col-xs-12 col-md-9 bg-danger p-3 dashbord float-md-right" style="margin-top: 38px;">
-            
+        <div class="col-xs-12 col-md-9 p-3 dashbord float-md-right" style="margin-top: 62px;background: #f0f1f3">
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-12">
+                        <h5>notification</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="container background bg-white">
+                <div class="row">
+                    <div class="col-12">
+                        <h5>compose new message</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-sm-12">
+                        <h6>title</h6>
+                        <input type="text" name="" class="w-100">
+                        <h6>Message</h6>
+                        <textarea rows="8" cols="55"></textarea>
+
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <h6>Notice date*</h6>
+                        <input type="text" name="">
+                        <h6 class="mt-2">Publish on*</h6>
+                        <input type="text" name="">
+                        <h6 class="mt-3">message*</h6>
+                        <form action="/action_page.php" class="p-2">
+                            <input type="checkbox" name="vehicle1" value="Bike" class="p-2">student<br>
+                            <input type="checkbox" name="vehicle2" value="Car">Parent<br>
+                            <input type="checkbox" name="vehicle3" value="Boat" checked> Admin<br>
+                            <input type="checkbox" name="vehicle2" value="Car">teacher<br>
+                            <input type="checkbox" name="vehicle2" value="Car">Accounttant<br>
+                            <input type="checkbox" name="vehicle2" value="Car">Libarian<br>
+                            <input type="checkbox" name="vehicle2" value="Car">super admin<br>
+
+
+                            <div class="justify-content-end d-flex ml-2 mt-2">
+                                <button class="btn btn-primary btn-md"><span><i class="far fa-envelope mr-1"></i></span>send</button>
+                            </div>
+
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
     </div>
-    <script src="script/aos.js"></script>
-    <script src="script/bootstrap.min.js"></script>
-    <script src="script/jquery.min.js"></script>
-    <script type="text/javascript" src="script/script.js" ></script>
+    <script src="../../script/aos.js"></script>
+    <script src="../../script/bootstrap.min.js"></script>
+    <script src="../../script/jquery.min.js"></script>
+    <script type="text/javascript" src="../../script/script.js"></script>
 </body>
 
 </html>
