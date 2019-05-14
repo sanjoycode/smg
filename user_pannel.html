@@ -3,73 +3,22 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">> 
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/icofont/icofont.min.css">
     <title>User pannel</title>
-    <link rel="stylesheet" type="text/css" href="css\aos.css">
-    <link rel="stylesheet" type="text/css" href="css\bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css\icofont\icofont.min.css">
     <style type="text/css">
-    .head-search input,
-    button {
-        height: 30px;
-    }
-
-    header .row {
-        padding: 5px 0px;
-    }
-
-    .treeview {
-        padding: 14px 20px;
-        position: relative;
-        font-size: 18px
-    }
-
-    .treeview a {
-        color: white;
-        text-decoration: none;
-    }
-
-    .treeview:hover {
-        background: black;
-        color: yellow;
-    }
-
-    .treeview a i:last-child {
-        position: absolute;
-        right: 5%;
-        top: 22px;
-    }
-
-    .treeview:hover a i:last-child {
-        color: red;
-    }
-
-    .tree-menu {
-        list-style: none;
-        padding: 0px;
-    }
-
-    .tree-menu li {
-        padding: 10px 0px;
-    }
-
-    .tree-menu li:last-child {
-        padding-bottom: 0px;
-    }
-
-    .focus {
-        background: black;
-    }
+    
     </style>
 </head>
 
 <body>
     <div style="position: relative;">
-        <nav class=" bg-dark text-light fixed-top" style="box-shadow: 0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23);">
+        <nav class=" navigation bg-dark text-light fixed-top">
             <div class="container">
                 <div class="row my-3">
                     <div class="menu_icon col-8 col-md-6 col-lg-7">
-                        <!-- <i class="d-inline-block d-none mr-3 icofont-navigation-menu"></i> -->
                         <span class="m-0">School Backend</span>
                     </div>
                     <div class="col-4 col-md-6 col-lg-5">
@@ -82,102 +31,88 @@
                                     </div>
                                 </div>
                             </form>
-                            <img src="myimage/dp.png" class="d-block ml-auto m-sm-l-0" style="width: 30px;">
+                            <img src="myimage/dp.png" class="dropdown d-block ml-auto m-sm-l-0 rounded-circle" style="width: 30px;height:30px;cursor: pointer;">
+                            <i class=" arrow icofont-caret-up"></i>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown_pannel p-0">
+                <div class="container">
+                    <div class="row pt-2 pt-md-2 pt-lg-3 px-3 px-sm-0 px-lg-3">
+                        <div class="col-6 pl-2 pl-md-0 p-0 ">
+                            <img src="myimage/dp.png" class="img-fluid rounded">
+                        </div>
+                        <div class="col-6 p-0 pl-2 pl-md-3 pt-2 ">
+                            <p class="h4 md-p user_name small_font">Amigo uno</p>
+                            <p class="h5 sm-p Designation small_font">Admin</p>
+                        </div>
+                    </div>
+                    <div class="row p-3 text-center">
+                                <a href="#" class="col rounded-left bg-warning p-1" style="cursor: pointer;text-decoration: none;">
+                                    Profile
+                                </a>
+                                <a href="#" class="col ml-1 rounded-right bg-warning p-1" style="cursor: pointer;text-decoration: none;">
+                                    Logout
+                                </a>
                     </div>
                 </div>
             </div>
         </nav>
     </div>
     <div class="container-fludi dashbord">
-        <div class="col-md-3 d-md-block bg-dark sideber cdx sticky-top p-0  " style="position: fixed;height:100%;top:62px;overflow: scroll;transition: 0.5s">
-            <ul class="p-0 sideber_menu" style="list-style: none;color:white">
-                <p style="padding: 21px 19px;margin:0px;box-shadow: 0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23);">Current session :2019-2020</p>
-                <li class="treeview">
-                    <a class="tree_head" href="#">
-                        <i class=""></i>
-                        <span>student Admission</span>
-                        <i class="icofont-rounded-right "></i>
-                    </a>
-                    <ul class="tree-menu">
+        <div class="col-md-3 d-md-block bg-dark sidebar sticky-top p-0">
+            <ul class="p-0 sidebar_accordination">
+                <p>Current session :2019-2020</p>
+                <li>
+                    <div class="tree_head">
+                        <div href="#">
+                            <i class=""></i>
+                            <span>student Admission</span>
+                            <i class="icofont-rounded-right "></i>
+                        </div>
+                    </div>
+                    <ul class="tree_pannel">
+                        <li class="icofont-double-right"><a class="report - Copy.html" href="#">Report</a></li>
+                        <li class="icofont-double-right"><a href="#">dfg fgh</a></li>
+                        <li class="icofont-double-right"><a href="#">tyu hgj</a></li>
+                        <li class="icofont-double-right"><a href="#">bvjhgj yh</a></li>
                     </ul>
                 </li>
-                <li class="treeview">
-                    <a href="#">
-                        <i class=""></i>
-                        <span>Attendance</span>
-                        <i class="icofont-rounded-right"></i>
-                    </a>
-                    
-                </li>
-                <li class="treeview">
-                    <a class="tree-head"  href="#">
-                        <i class=""></i>
-                        <span>Academics</span>
-                        <i class="icofont-rounded-right"></i>
-                    </a>
-                    <ul class="tree-menu">
-                        <li class="icofont-double-right"><a>asd fgh</a></li>
-                        <li class="icofont-double-right"><a>dfg fgh</a></li>
-                        <li class="icofont-double-right"><a>tyu hgj</a></li>
-                        <li class="icofont-double-right"><a>bvjhgj yh</a></li>
+                <li>
+                    <div class="tree_head">
+                        <div href="#">
+                            <i class=""></i>
+                            <span>student Admission</span>
+                            <i class="icofont-rounded-right "></i>
+                        </div>
+                    </div>
+                    <ul class="tree_pannel">
+                        <li class="icofont-double-right"><a href="#">asd fgh</a></li>
+                        <li class="icofont-double-right"><a href="#">dfg fgh</a></li>
+                        <li class="icofont-double-right"><a href="#">tyu hgj</a></li>
+                        <li class="icofont-double-right"><a href="#">bvjhgj yh</a></li>
                     </ul>
                 </li>
-                <li class="treeview">
-                    <a class="tree-head" href="#">
-                        <i class=""></i>
-                        <span>Human Resource</span>
-                        <i class="icofont-rounded-right"></i>
-                    </a>
-                    <ul class="tree-menu">
-                        <li class="icofont-double-right"><a>asd fgh</a></li>
-                        <li class="icofont-double-right"><a>dfg fgh</a></li>
-                        <li class="icofont-double-right"><a>tyu hgj</a></li>
-                        <li class="icofont-double-right"><a>bvjhgj yh</a></li>
-                    </ul>
-                </li>
-                <li class="treeview">
-                    <div class="tree-head" >
-                    <a href="#">
-                        <i class=""></i>
-                        <span>Transport</span>
-                        <i class="icofont-rounded-right"></i>
-                    </a>
-                </div>
-                    <ul class="tree-menu">
-                    </ul>
-                </li>
-                <li class="treeview">
-                    <a class="tree-head" href="#">
-                        <i class=""></i>
-                        <span>Report</span>
-                        <i class="icofont-rounded-right"></i>
-                    </a>
-                    <ul class="tree-menu">
-                    </ul>
-                </li>
-                <li class="treeview">
-                    <a class="tree-head" href="#">
-                        <i class=""></i>
-                        <span>comunication</span>
-                        <i class="icofont-rounded-right"></i>
-                    </a>
-                    <ul class="tree-menu">
-                    </ul>
-                </li>
-                <li class="treeview">
-                    <a class="tree-head" href="#">
-                        <i class=""></i>
-                        <span>System Settings</span>
-                        <i class="icofont-rounded-right"></i>
-                    </a>
-                    <ul class="tree-menu">
+                <li>
+                    <div class="tree_head">
+                        <div href="#">
+                            <i class=""></i>
+                            <span>student Admission</span>
+                            <i class="icofont-rounded-right "></i>
+                        </div>
+                    </div>
+                    <ul class="tree_pannel">
+                        <li class="icofont-double-right"><a href="#">asd fgh</a></li>
+                        <li class="icofont-double-right"><a href="#">dfg fgh</a></li>
+                        <li class="icofont-double-right"><a href="#">tyu hgj</a></li>
+                        <li class="icofont-double-right"><a href="#">bvjhgj yh</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
-        <div class="col-xs-12 col-md-9 bg-danger content float-lg-right" style="height:20000px;margin-top: 62px;">
-            content content content
+        <div class="col-xs-12 col-md-9 bg-danger p-3 dashbord float-md-right" style="margin-top: 38px;">
+            
         </div>
     </div>
     <script src="script/aos.js"></script>
@@ -189,20 +124,35 @@
     // Hide and show sidebar when viewport is gose smaller than tab size  
     function sidebar() {
         if (width < 750) {
-            $(".sideber").addClass('d-none');
+            $(".sidebar").addClass('d-none');
 
         } else if (width > 750) {
-            $(".sideber").removeClass('d-none');
+            $(".sidebar").removeClass('d-none');
         }
     }
     $(document).ready(function() {
 
+        $('.navigation .arrow').hide();
+        $('.navigation .dropdown_pannel').hide();
 
+        $('.navigation .dropdown').click(function(e){
+            if($('.navigation .arrow').hasClass('open'))
+            {
+                 $('.navigation .arrow').fadeOut();
+                $('.navigation .dropdown_pannel').fadeOut();
+                $('.navigation .arrow').removeClass('open');
+            }
+            else{
+                $('.navigation .arrow').fadeIn();
+                $('.navigation .dropdown_pannel').fadeIn();
+                $('.navigation .arrow').addClass('open');
+            }
+        });
 
         // toggling hambarger button between small amd wide screen
         if (width < 750) {
             $(".menu_icon").prepend('<i class=" toggle d-inline-block d-none mr-3 icofont-navigation-menu" style="cursor:pointer"></i>');
-            $('.cdx').css({ 'width': "40%" });
+            $('.sidebar').css({ 'width': "40%" });
         } else {
             $(".menu_icon i").remove();
         }
@@ -215,7 +165,7 @@
             sidebar();
         });
 
-        // hiding and showing sideber respect to view port
+        // hiding and showing sidebar respect to view port
         // since hasclass function is not working thats why i use even odd checking for toggling
         var count = 0;
 
@@ -225,75 +175,62 @@
             console.log(count);
 
             if (count % 2 != 0) {
-                $('.cdx').removeClass('d-none');
+                $('.sidebar').removeClass('d-none');
                 $(".content").css({ 'margin-left': '40%' });
 
             } else {
-                $('.cdx').addClass('d-none');;
+                $('.sidebar').addClass('d-none');;
                 $(".content").css({ 'margin-left': '0px' });
             }
         });
 
-        //hiding tree-menus onload
-        $('.tree-menu').hide();
+        //accordination
+        //hiding tree_pannels onload
+        $('.tree_pannel').hide();
 
-        //open up tree-menu  when  tree-view is clickd
+        //open up tree_pannel  when  tree-view is clickd
         // and toggle between right-arrow-icon and down arrow icon.
-        $('.treeview').click(function(e) {
+        $('.tree_head', this).click(function(e) {
 
 
 
-            var tree_view = $(this);
-            var tree_menu = tree_view.find('.tree-menu');
-            var left_icon = tree_view.find('a i.icofont-rounded-right');
-            var down_icon = tree_view.find('a i.icofont-rounded-down');
+            var this_accordination = $(this).parent().parent(),
+                tree_head = $(this),
+                tree_pannel = tree_head.siblings('.tree_pannel'),
+                left_icon = tree_head.find('a i.icofont-rounded-right'),
+                down_icon = tree_head.find('a i.icofont-rounded-down');
 
-            console.log(left_icon.hasClass('icofont-rounded-right'));
-            if (tree_menu.hasClass('active')) {
-                tree_menu.removeClass('active');
-                tree_menu.hide();
+            //reset all tree_pannel expect only for current to be showed
+            this_accordination.find('.tree_head').not(this).removeClass('active');
+            this_accordination.find('.tree_pannel').not(this).removeClass('active').slideUp();
+
+
+
+            if (tree_head.hasClass('active')) {
+                tree_head.removeClass('active');
+                tree_pannel.removeClass('active').slideUp();
                 down_icon.removeClass('icofont-rounded-down');
                 down_icon.addClass('icofont-rounded-right');
 
             } else {
-                tree_menu.addClass('active');
-                tree_menu.show();
+                tree_head.addClass('active');
+                tree_pannel.addClass('active').slideDown();
                 left_icon.removeClass('icofont-rounded-right');
                 left_icon.addClass('icofont-rounded-down');
-
             }
 
         });
 
+
+
         //focus effect on tree-view
 
+        $('.tree_head').mouseout(function() {
+            $(this).addClass('focus');
+        });
 
-        // $('.treeview').each(function(e){
-        //     $(this).mouseover(function() {
-        //     if ($(this).hasClass('focus')) {
-        //         $(this).removeClass('focus');
-        //     } else {
-        //         $(this).addClass('focus');
-        //     }
-        // });
-
-        //     console.log(e)
-        // });
-
-        $('.treeview').mouseover(function(e) {
-            // $('.treeview').each(function() {
-
-            //     // if ($(this).hasClass('focus')) {
-            //     //     $(this).removeClass('focus');
-            //     // } else {
-            //     //     $(this).addClass('focus');
-            //     // }
-            //     console.log(e.find('span').text());
-            // });
-            for (var i = 0; i <= $('.treeview').length ; i++) {
-                console.log(i);
-            }
-
+        $('.tree_head').mouseover(function() {
+            $('.sidebar_accordination').find('.tree_head').not(this).removeClass('focus');
         });
 
     });

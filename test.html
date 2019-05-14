@@ -1,66 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.a{
-  width:200px;
-  height:200px;
-  display: inline-block;
-  margin:20px;
-  text-align: center;
-}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/icofont/icofont.min.css">
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <style>
+    ul {
+        list-style: none;
+    }
 
-.b{
-  background-color: red
-}
-.c{
-  background-color: yellow
-}
-.d{
-  background-color: #1dcfe4
-}
-.e{
-  background-color: blue
-}
+    ul .acc-head {
+        background: #6b5959;
+        color: white;
+        padding: 10px 35px;
+        position: relative;
+    }
 
-.b:hover{
-  background: black
-}
-.c:active{
-  background: navy;
-}
-.d:focus-within{
-  background: green;
-}
+    ul .acc-menu {
+        background: #dddde1;
+        padding: 35px;
+    }
 
-
-</style>
+    ul .acc-head i {
+        position: absolute;
+        top: 17px;
+        right: 30px;
+    }
+    </style>
 </head>
+
 <body>
+    <div class="container">
+      <h1 class="text-center mt-4 text-primary">Testing of accordination</h1>
+        <ul class="accordination my-5">
+            <li class="mb-3">
+                <div class="acc-head">
+                    <p class="m-0 mb-1 text-warning">accordination title 1</p>
+                    <i class="icofont-rounded-right"></i>
+                </div>
+                <div class="acc-menu text-muted">
+                    <p>hfkjs s dkfjhs sdfhs fshdfkjsdn ufd dfudn fdf og fh gbkr rgn vdc c dfdjhnv vdfff fdfjdfdf dkfjhs sdfhs fshdfkjsdn ufd dfudn fdf og fh gbkr rgn vdc c dfdjhnv vdfff fdfjdfdf dkfjhs sdfhs fshdfkjsdn ufd dfudn fdf og fh gbkr rgn vdc c dfdjhnv vdfff fdfjdfdf</p>
+                    <p>hfkjs s dkfjhs sdfhs fshdfkjsdn ufd dfudn fdf og fh gbkr rgn vdc c dfdjhnv vdfff fdfjdfdf dkfjhs sdfhs fshdfkjsdn ufd dfudn fdf og fh gbkr rgn vdc c dfdjhnv vdfff fdfjdfdf dkfjhs sdfhs fshdfkjsdn ufd dfudn fdf og fh gbkr rgn vdc c dfdjhnv vdfff fdfjdfdf</p>
+                </div>
+            </li>
+            <li class="mb-3">
+                <div class="acc-head">
+                    <p class="m-0 mb-1 text-warning">accordination title 2</p>
+                    <i class="icofont-rounded-right"></i>
+                </div>
+                <div class="acc-menu text-muted">
+                    <p>hfkjs s dkfjhs sdfhs fshdfkjsdn ufd dfudn fdf og fh gbkr rgn vdc c dfdjhnv vdfff fdfjdfdf dkfjhs sdfhs fshdfkjsdn ufd dfudn fdf og fh gbkr rgn vdc c dfdjhnv vdfff fdfjdfdf dkfjhs sdfhs fshdfkjsdn ufd dfudn fdf og fh gbkr rgn vdc c dfdjhnv vdfff fdfjdfdf</p>
+                    <p>hfkjs s dkfjhs sdfhs fshdfkjsdn ufd dfudn fdf og fh gbkr rgn vdc c dfdjhnv vdfff fdfjdfdf dkfjhs sdfhs fshdfkjsdn ufd dfudn fdf og fh gbkr rgn vdc c dfdjhnv vdfff fdfjdfdf dkfjhs sdfhs fshdfkjsdn ufd dfudn fdf og fh gbkr rgn vdc c dfdjhnv vdfff fdfjdfdf</p>
+                </div>
+            </li>
+            <li class="mb-3">
+                <div class="acc-head">
+                    <p class="m-0 mb-1 text-warning">accordination title 3</p>
+                    <i class="icofont-rounded-right"></i>
+                </div>
+                <div class="acc-menu text-muted">
+                    <p>hfkjs s dkfjhs sdfhs fshdfkjsdn ufd dfudn fdf og fh gbkr rgn vdc c dfdjhnv vdfff fdfjdfdf dkfjhs sdfhs fshdfkjsdn ufd dfudn fdf og fh gbkr rgn vdc c dfdjhnv vdfff fdfjdfdf dkfjhs sdfhs fshdfkjsdn ufd dfudn fdf og fh gbkr rgn vdc c dfdjhnv vdfff fdfjdfdf</p>
+                    <p>hfkjs s dkfjhs sdfhs fshdfkjsdn ufd dfudn fdf og fh gbkr rgn vdc c dfdjhnv vdfff fdfjdfdf dkfjhs sdfhs fshdfkjsdn ufd dfudn fdf og fh gbkr rgn vdc c dfdjhnv vdfff fdfjdfdf dkfjhs sdfhs fshdfkjsdn ufd dfudn fdf og fh gbkr rgn vdc c dfdjhnv vdfff fdfjdfdf</p>
+                </div>
+            </li>
+        </ul>
+        <h1 class="fa fa-user m-0 mb-1 text-center text-danger">Probleam with <u>thishead</u> and <u>pannel</u></h1>
+        <p class="fa fa-user">text</p>
+    </div>
+    <script src="script/jquery.min.js"></script>
+    <script>
+      $('document').ready(function(){
+          $('.accordination').each(function(){
 
-<div class="a b">1</div>
-<div class="a c">2</div>
-<a class="a d">3</a>
-<div class="a e">4</div>
+            //hide pannel
+            $('.acc-menu',this).hide();
 
-<script src="script/jquery.min.js"></script>
-<script>
-// function openNav() {
-//   document.getElementById("mySidebar").style.width = "250px";
-//   document.getElementById("main").style.marginLeft = "250px";
-// }
+            //binding event to show and hide accordination pannel
+            $('.acc-head',this).click(function(e){
 
-// function closeNav() {
-//   document.getElementById("mySidebar").style.width = "0";
-//   document.getElementById("main").style.marginLeft= "0";
-// }
-$(".d").focusin(function(){
-  $('.d').addClass('e');
-  console.log('oj');
-});
-</script>
-   
+              var accordination = $(this).parent().parent(),
+              thisHead = $(this),
+              pannel = thisHead.siblings('.acc-menu'),
+              icon = thisHead.find('i');
+
+
+              //reset all header and pannels expect for current
+              accordination.find('.acc-head').not(this).removeClass('activ');
+             // accordination.find('.acc-head').not(this).css({'background-color':'orange'});
+              accordination.find('.acc-menu').not(this).removeClass('activ').slideUp();
+             
+              console.log(accordination.find('.acc-menu'));
+
+              if(pannel.hasClass('activ'))
+              {
+                thisHead.removeClass('activ');
+                pannel.removeClass('activ').slideUp();
+                icon.removeClass('icofont-rounded-down');
+                icon.addClass('icofont-rounded-right');
+                thisHead.css({"background":"#6b5959"});
+              }
+              else{
+                thisHead.addClass('activ');
+                pannel.addClass('activ').slideDown();
+                icon.removeClass('icofont-rounded-right');
+                icon.addClass('icofont-rounded-down');
+                thisHead.css({'background':'red'});
+              }
+
+            });
+
+          });
+      });
+    </script>
 </body>
-</html> 
+
+</html>
