@@ -503,6 +503,7 @@ header .row {
 .sidebar_accordination {
     list-style: none;
     color: white;
+    margin-bottom: 50px;
 }
 
 .sidebar_accordination p {
