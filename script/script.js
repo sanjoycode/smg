@@ -1,4 +1,4 @@
-var width = $(window).width();
+        var width = $(window).width();
 
         // Hide and show sidebar when viewport is gose smaller than tab size  
         function sidebar() {
@@ -9,7 +9,31 @@ var width = $(window).width();
                 $(".sidebar").removeClass('d-none');
             }
         }
+
+        //add_staff page's additional information pannel innitialy hidden 
+        //pannel will showne when head is clicked
+        function pannel_opener() {
+            $('.acc_pannel').hide();
+            
+
+            $('.acc_head').click(function () {
+                if ($('.acc_pannel').hasClass('active')) {
+                    console.log($('.acc_head').filter('i'));
+                    $('.acc_pannel').removeClass('active').slideUp();
+                    $('.acc_head').find('i').removeClass('fa-minus');
+                    $('.acc_head').find('i').addClass('fa-plus');
+                } else {
+                    $('.acc_pannel').addClass('active').slideDown();
+                    
+                    $('.acc_head').find('i').removeClass('fa-plus');
+                    $('.acc_head').find('i').addClass('fa-minus');
+                }
+            });
+        }
+
         $(document).ready(function() {
+            //add_staff page pannel togglear
+            pannel_opener();
             
             /*----------------------------staff page accordination----------------------*/
             
