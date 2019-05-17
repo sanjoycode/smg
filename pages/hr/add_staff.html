@@ -483,29 +483,6 @@
     <script src="../../script/bootstrap.min.js"></script>
     <script src="../../script/jquery.min.js"></script>
     <script type="text/javascript" src="../../script/script.js"></script>
-    <script>
-        function pannel_opener() {
-            $('.acc_pannel').hide();
-            
-
-            $('.acc_head').click(function () {
-                if ($('.acc_pannel').hasClass('active')) {
-                    console.log($('.acc_head').filter('i'));
-                    $('.acc_pannel').removeClass('active').slideUp();
-                    $('.acc_pannel').find('i').removeClass('fa-minus');
-                    $('.acc_pannel').find('i').addClass('fa-plus');
-                } else {
-                    $('.acc_pannel').addClass('active').slideDown();
-                    $('.acc_pannel').find('i').removeClass('fa-plus');
-                    $('.acc_pannel').find('i').addClass('fa-minus');
-                }
-            });
-        }
-
-        $('document').ready(function () {
-            pannel_opener();
-        });
-    </script>
 </body>
 
 </html>
