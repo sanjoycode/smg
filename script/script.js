@@ -148,8 +148,8 @@
                 var this_accordination = $(this).parent().parent(),
                     tree_head = $(this),
                     tree_pannel = tree_head.siblings('.tree_pannel'),
-                    left_icon = tree_head.find('a i.icofont-rounded-right'),
-                    down_icon = tree_head.find('a i.icofont-rounded-down');
+                    left_icon = tree_head.find('.icofont-rounded-right'),
+                    down_icon = tree_head.find('.icofont-rounded-down');
 
                 //reset all tree_pannel expect only for current to be showed
                 this_accordination.find('.tree_head').not(this).removeClass('active');
