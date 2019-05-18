@@ -532,7 +532,7 @@ header .row {
 
 }
 
-.sidebar_accordination li a i:last-child {
+.tree_head i:last-child {
     position: absolute;
     right: 5%;
     top: 22px;
