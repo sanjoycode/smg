@@ -31,10 +31,53 @@
             });
         }
 
+        //System setting page's edit to save button toggler
+        //when edit button is showne then input fields are disable and vicvarsa
+        function setting_btn_toggler() {
+            $(".system_settings_btn").click(function () {
+                if ($(".system_settings_btn").hasClass('save')) {
+                    $(".system_settings_btn").removeClass("save");
+                    $(".system_settings_btn").removeClass('btn-success');
+                    $(".system_settings_btn").addClass('btn-warning');
+                    $(".system_settings_btn").text("Edit");
+                    $('.input_filds .form-control').attr("disabled", "true");
+                } else {
+                    $(".system_settings_btn").addClass("save");
+                    $(".system_settings_btn").removeClass('btn-warning');
+                    $(".system_settings_btn").addClass('btn-success');
+                    $(".system_settings_btn").text("Save");
+                    $('.input_filds .form-control').removeAttr("disabled");
+                }
+
+            });
+        }
+
+        //System setting page's image to file input field toggler
+        function change_logo() {
+            $('.change_logo').click(function () {
+                if ($('.change_logo').hasClass('changed')) {
+                    $('.change_logo').removeClass('changed');
+                    $(".school_logo label").remove();
+                    $(".school_logo input").remove();
+                    $(".school_logo").html('<img class="img-fluid p-2" src="../../myimage/school_logo.png">');
+
+                } else {
+                    $('.change_logo').addClass('changed');
+                    $(".school_logo").find('img').remove();
+                    $(".school_logo:first-child").html(
+                        '<label class="form-control-label text-muted">choolse photo</label><input class="form-control-file" type="file"/>'
+                    );
+                }
+            });
+        }
+
         $(document).ready(function() {
             //add_staff page pannel togglear
             pannel_opener();
-            
+            ///System setting page's button toggler
+            setting_btn_toggler();
+            //System setting page's logo to input
+            change_logo()
             /*----------------------------staff page accordination----------------------*/
             
             $('.accordination').each(function() {
