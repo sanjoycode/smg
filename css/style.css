@@ -645,6 +645,13 @@ header .row {
     padding: 16px;
     border-radius: 250px;
 }
+/*==========Student Admission============*/
+.add_more_detailse{
+    border-radius:5px;
+    border:1px solid rgb(223, 223, 223); 
+    border-top: 4px solid rgb(10, 185, 147);
+    border-bottom:1px solid rgb(32, 32, 32);
+}
 @media screen and (max-width ){
     
 }
