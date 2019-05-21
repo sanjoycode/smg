@@ -13,6 +13,16 @@
     src: url(../font/Quicksand-Bold.ttf);
 }
 
+@font-face{
+    font-family: lato;
+    src: url(../font/Lato-Bold.ttf);
+    font-weight: bold;
+}
+@font-face{
+    font-family: lato-bolditelic;
+    src:url(../font/Lato-BoldItalic.ttf);
+}
+
 .f {
     font-family: sniglet;
     font-weight: bold;
@@ -36,6 +46,15 @@
 
 .s {
     font-size: 25px;
+}
+.sm-font{
+    font-family: lato-bolditelic;
+    font-size: 13px;
+}
+
+.custom-shadow{
+    box-shadow: 0px 0px 5px gray ;
+    border: 1px solid rgb(172, 173, 169);
 }
 
 .border {
