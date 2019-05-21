@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../../css/icofont/icofont.min.css">
+    <title>User pannel</title>
+</head>
+
+<body>
+    <div style="position: relative;">
+        <nav class=" navigation bg-dark text-light fixed-top">
+            <div class="container">
+                <div class="row my-3">
+                    <div class="menu_icon col-8 col-md-6 col-lg-7">
+                        <span class="m-0">School Backend</span>
+                    </div>
+                    <div class="col-4 col-md-6 col-lg-5">
+                        <div class="d-flex flex-row">
+                            <form class="head-search form-inline d-none d-md-block" action="" method="post">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Username"
+                                        aria-label="Username">
+                                    <div class="input-group-prepend">
+                                        <button class="input-group-text rounded-right" style="height: 30px"><i
+                                                class="icofont-search-2"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                            <img src="../../myimage/dp.png" class="dropdown d-block ml-auto m-sm-l-0 rounded-circle"
+                                style="width: 30px;height:30px;cursor: pointer;">
+                            <i class=" arrow icofont-caret-up"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown_pannel p-0">
+                <div class="container">
+                    <div class="row pt-2 pt-md-2 pt-lg-3 px-3 px-sm-0 px-lg-3">
+                        <div class="col-6 pl-2 pl-md-0 p-0 ">
+                            <img src="../../myimage/dp.png" class="img-fluid rounded">
+                        </div>
+                        <div class="col-6 p-0 pl-2 pl-md-3 pt-2 ">
+                            <p class="h4 md-p user_name small_font">Amigo uno</p>
+                            <p class="h5 sm-p Designation small_font">Admin</p>
+                        </div>
+                    </div>
+                    <div class="row p-3 text-center">
+                        <a href="#" class="col rounded-left bg-warning p-1"
+                            style="cursor: pointer;text-decoration: none;">
+                            Profile
+                        </a>
+                        <a href="#" class="col ml-1 rounded-right bg-warning p-1"
+                            style="cursor: pointer;text-decoration: none;">
+                            Logout
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container-fludi dashbord">
+        <div class="col-md-3 d-md-block bg-dark sidebar sticky-top p-0">
+            <ul class="p-0 sidebar_accordination">
+                <p>Current session :2019-2020</p>
+                <li>
+                    <div class="tree_head">
+                        <div href="#">
+                            <i class=""></i>
+                            <span>Student Informaton</span>
+                            <i class="icofont-rounded-right "></i>
+                        </div>
+                    </div>
+                    <ul class="tree_pannel">
+                        <li class="icofont-double-right"><a href="student_info(not using).html">Student
+                                Detailse</a></li>
+                        <li class="icofont-double-right"><a href="student_history.html">Student
+                                History</a></li>
+                        <li class="icofont-double-right"><a href="student_admission.html">Admission</a></li>
+                        <li class="icofont-double-right"><a href="../#">Timetable</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="tree_head">
+                        <div href="#">
+                            <i class=""></i>
+                            <span>Attendance</span>
+                            <i class="icofont-rounded-right "></i>
+                        </div>
+                    </div>
+                    <ul class="tree_pannel">
+                        <li class="icofont-double-right"><a href="../#">Student Attendance</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="tree_head">
+                        <div href="#">
+                            <i class=""></i>
+                            <span>Academic</span>
+                            <i class="icofont-rounded-right "></i>
+                        </div>
+                    </div>
+                    <ul class="tree_pannel">
+                        <li class="icofont-double-right"><a href="../academic/Add_time_table.html">Add timetable</a>
+                        </li>
+                        <li class="icofont-double-right"><a href="../academic/add_class.html">Add class</a></li>
+                        <li class="icofont-double-right"><a href="../academic/add_section.html">Add section</a></li>
+                        <li class="icofont-double-right"><a href="../academic/add_subject.html">Add subject</a></li>
+                        <li class="icofont-double-right"><a href="../academic/asign_subject.html">Asign subject</a></li>
+                        <li class="icofont-double-right"><a href="../academic/asign_classteacher.html">Asign class
+                                Teacher</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="tree_head">
+                        <div href="#">
+                            <i class=""></i>
+                            <span>Staff Management</span>
+                            <i class="icofont-rounded-right "></i>
+                        </div>
+                    </div>
+                    <ul class="tree_pannel">
+                        <li class="icofont-double-right"><a href="../hr/add_staff.html">Add Staff</a></li>
+                        <li class="icofont-double-right"><a href="../hr/attendance.html">Attendance</a></li>
+                        <li class="icofont-double-right"><a href="../hr/attendance_report.html">Attendance report</a>
+                        </li>
+                        <li class="icofont-double-right"><a href="../hr/deperment.html">Department</a></li>
+                        <li class="icofont-double-right"><a href="../hr/designtation.html">Designation</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="tree_head">
+                        <div href="#">
+                            <i class=""></i>
+                            <span>Transport</span>
+                            <i class="icofont-rounded-right "></i>
+                        </div>
+                    </div>
+                    <ul class="tree_pannel">
+                        <li class="icofont-double-right"><a href="add_wahicale.html">Add Vehicale</a></li>
+                        <li class="icofont-double-right"><a href="assign_vehicale.html">Asign Vehicale</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="tree_head">
+                        <div href="#">
+                            <i class=""></i>
+                            <span>Communication</span>
+                            <i class="icofont-rounded-right "></i>
+                        </div>
+                    </div>
+                    <ul class="tree_pannel">
+                        <li class="icofont-double-right"><a href="../communication/notice bord.html">Notice Board</a>
+                        </li>
+                        <li class="icofont-double-right"><a href="../communication/post_new_notice.html">Create
+                                Notice</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="tree_head">
+                        <div href="#">
+                            <i class=""></i>
+                            <span>Settings</span>
+                            <i class="icofont-rounded-right "></i>
+                        </div>
+                    </div>
+                    <ul class="tree_pannel">
+                        <li class="icofont-double-right"><a href="../system_settings/system_setting.html">System
+                                Settings</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-md-9 p-3 dashbord float-md-right">
+            <div class="container">
+                <div class="row">
+                    <h3 class="col p-0">Stedent Admission</h3>
+                </div>
+            </div>
+            <div class="container bg-white rounded background p-3">
+                <div class="row mx-0 custom-shadow mb-5" name="student_detailse">
+                    <div class="container ">
+                        <hader>
+                            <div class="row">
+                                <div class="col" style="background: #f5f9d3;">
+                                    <h6 class="m-2">Student Admission info</h6>
+                                </div>
+                            </div>
+                        </hader>
+                        <!---End of header-->
+                        <main class="py-3">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="form-group form-group-sm">
+                                        <label class="mb-1 form-control-label sm-font"
+                                            style="font-size: 14px;">Admission Number<span
+                                                class="text-danger">*</span></label>
+                                        <input class="form-control form-control-sm border-info" type="text" name=""
+                                            value="">
+                                    </div>
+                                </div>
+                                <!--End of col-->
+                                <div class="col-sm">
+                                    <div class="form-group form-group-sm">
+                                        <label class="mb-1 form-control-label sm-font">Roll Number</label>
+                                        <input class="form-control form-control-sm border-info" type="text" name=""
+                                            value="">
+                                    </div>
+                                </div>
+                                <!--End of col-->
+                                <div class="col-sm">
+                                    <div class="form-group form-group-sm">
+                                        <label class="mb-1 form-control-label sm-font">Class</label>
+                                        <select class="form-control form-control-sm border-info">
+                                            <option vlaue=""></option>
+                                            <option vlaue="">Class 1</option>
+                                            <option vlaue="">Class 2</option>
+                                            <option vlaue="">Class 3</option>
+                                            <option vlaue="">Class 4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!--End of col-->
+                                <div class="col-sm">
+                                    <div class="form-group form-group-sm">
+                                        <label class="mb-1 form-control-label sm-font">Section</label>
+                                        <select class="form-control form-control-sm border-info">
+                                            <option vlaue=""></option>
+                                            <option vlaue="">sec A</option>
+                                            <option vlaue="">sec B</option>
+                                            <option vlaue="">sec C</option>
+                                            <option vlaue="">sec D</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!--End of col-->
+                            </div>
+                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="form-group form-group-sm">
+                                        <label class="mb-1 form-control-label sm-font">First Name<span
+                                                class="text-danger">*</span></label>
+                                        <input class="form-control form-control-sm border-info" type="text" name=""
+                                            value="">
+                                    </div>
+                                </div>
+                                <!--End of col-->
+                                <div class="col-sm">
+                                    <div class="form-group form-group-sm">
+                                        <label class="mb-1 form-control-label sm-font">Last Name<span
+                                                class="text-danger">*</span></label>
+                                        <input class="form-control form-control-sm border-info" type="text" name=""
+                                            value="">
+                                    </div>
+                                </div>
+                                <!--End of col-->
+                                <div class="col-sm">
+                                    <div class="form-group form-group-sm">
+                                        <label class="mb-1 form-control-label sm-font">Gender<span
+                                                class="text-danger">*</span></label>
+                                        <select class="form-control form-control-sm border-info">
+                                            <option vlaue=""></option>
+                                            <option vlaue="">Male</option>
+                                            <option vlaue="">Female</option>
+                                            <option vlaue="">Others</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!--End of col-->
+                                <div class="col-sm">
+                                    <div class="form-group form-group-sm">
+                                        <label class="mb-1 form-control-label sm-font">Date of Birth<span
+                                                class="text-danger">*</span></label>
+                                        <input class="form-control form-control-sm border-info" type="text" name=""
+                                            value="">
+                                    </div>
+                                </div>
+                                <!--End of col-->
+                            </div>
+                            <!--End of row-->
+                            <div class="row">
+                                <div class="col-sm col-6">
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <div class="form-group form-group-sm">
+                                                <label class="mb-1 form-control-label sm-font">Catagory<span
+                                                        class="text-danger">*</span></label>
+                                                <select class="form-control form-control-sm border-info">
+                                                    <option vlaue=""></option>
+                                                    <option vlaue="">General</option>
+                                                    <option vlaue="">SC</option>
+                                                    <option vlaue="">ST</option>
+                                                    <option vlaue="">OBC</option>
+                                                    <option vlaue="">Physically Challenged</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <!--End of col-->
+                                        <div class="col-sm">
+                                            <div class="form-group form-group-sm">
+                                                <label class="mb-1 form-control-label sm-font">Religion</label>
+                                                <input class="form-control form-control-sm border-info" type="text"
+                                                    name="" value="">
+                                            </div>
+                                        </div>
+                                        <!--End of col-->
+                                        <div class="col-sm">
+                                            <div class="form-group form-group-sm">
+                                                <label class="mb-1 form-control-label sm-font">Cast</label>
+                                                <input class="form-control form-control-sm border-info" type="text"
+                                                    name="" value="">
+                                            </div>
+                                        </div>
+                                        <!--End of col-->
+                                    </div>
+                                    <!--End of row-->
+                                </div>
+                                <!--End of col-->
+                                <div class="col-sm col-6">
+                                    <div class="row">
+                                        <div class="col-sm ">
+                                            <div class="form-group form-group-sm">
+                                                <label class="mb-1 form-control-label sm-font">Mobile Number</label>
+                                                <input class="form-control form-control-sm border-info" type="text"
+                                                    name="" value="">
+                                            </div>
+                                        </div>
+                                        <!--End of col-->
+                                        <div class="col-sm">
+                                            <div class="form-group form-group-sm">
+                                                <label class="mb-1 form-control-label sm-font">Email</label>
+                                                <input class="form-control form-control-sm border-info" type="text"
+                                                    name="" value="">
+                                            </div>
+                                        </div>
+                                        <!--End of col-->
+                                    </div>
+                                    <!--End of row-->
+                                </div>
+                                <!--End of col-->
+                            </div>
+                            <!--End of row-->
+                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="form-group form-group-sm">
+                                        <label class="mb-1 form-control-label sm-font">Admission Date</label>
+                                        <input class="form-control form-control-sm border-info" type="date" name=""
+                                            value="">
+                                    </div>
+                                </div>
+                                <!--End of col-->
+                                <div class="col-sm">
+                                    <div class="form-group form-group-sm">
+                                        <label class="mb-1 form-control-label sm-font">Student Photo</label>
+                                        <input class="form-control-file form-control-sm border-info" type="file" name=""
+                                            value="">
+                                    </div>
+                                </div>
+                                <!--End of col-->
+                                <div class="col-sm">
+                                    <div class="form-group form-group-sm">
+                                        <label class="mb-1 form-control-label sm-font">Blood Group</label>
+                                        <select class="form-control form-control-sm border-info">
+                                            <option vlaue=""></option>
+                                            <option vlaue="">O+</option>
+                                            <option vlaue="">A+</option>
+                                            <option vlaue="">B+</option>
+                                            <option vlaue="">O-</option>
+                                            <option vlaue="">A-</option>
+                                            <option vlaue="">B-</option>
+                                            <option vlaue="">AB+</option>
+                                            <option vlaue="">AB-</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!--End of col-->
+                            </div>
+                            <!--End of Row-->
+                        </main>
+                        <!--end of main-->
+                    </div>
+                    <!--End of container-->
+                </div>
+                <!--End of student_detailse-->
+                <div class="row mx-0 custom-shadow my-5" name="parrent_detailse">
+                    <div class="container ">
+                        <hader>
+                            <div class="row">
+                                <div class="col" style="background: #f5f9d3;">
+                                    <h6 class="m-2">Parent info</h6>
+                                </div>
+                            </div>
+                        </hader>
+                        <!---End of header-->
+                        <main class="py-3">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="form-group form-group-sm">
+                                        <label class="mb-1 form-control-label sm-font">Father Name</label>
+                                        <input class="form-control form-control-sm border-info" type="text" name=""
+                                            value="">
+                                    </div>
+                                </div>
+                                <!--End of col-->
+                                <div class="col-sm">
+                                    <div class="form-group form-group-sm">
+                                        <label class="mb-1 form-control-label sm-font">Father Phone</label>
+                                        <input class="form-control form-control-sm border-info" type="text" name=""
+                                            value="">
+                                    </div>
+                                </div>
+                                <!--End of col-->
+                                <div class="col-sm">
+                                    <div class="form-group form-group-sm">
+                                        <label class="mb-1 form-control-label sm-font">Father Occupation</label>
+                                        <input class="form-control form-control-sm border-info" type="text" name=""
+                                            value="">
+                                    </div>
+                                </div>
+                                <!--End of col-->
+                                <div class="col-sm">
+                                    <div class="form-group form-group-sm">
+                                        <label class="mb-1 form-control-label sm-font">Father Dhoto</label>
+                                        <input class="form-control-file form-control-sm border-info" type="file" name=""
+                                            value="">
+                                    </div>
+                                </div>
+                                <!--End of col-->
+                            </div>
+                            <!--End of row-->
+                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="form-group form-group-sm">
+                                        <label class="mb-1 form-control-label sm-font">Mother Name</label>
+                                        <input class="form-control form-control-sm border-info" type="text" name=""
+                                            value="">
+                                    </div>
+                                </div>
+                                <!--End of col-->
+                                <div class="col-sm">
+                                    <div class="form-group form-group-sm">
+                                        <label class="mb-1 form-control-label sm-font">Mother Phone</label>
+                                        <input class="form-control form-control-sm border-info" type="text" name=""
+                                            value="">
+                                    </div>
+                                </div>
+                                <!--End of col-->
+                                <div class="col-sm">
+                                    <div class="form-group form-group-sm">
+                                        <label class="mb-1 form-control-label sm-font">Mother Occupation</label>
+                                        <input class="form-control form-control-sm border-info" type="text" name=""
+                                            value="">
+                                    </div>
+                                </div>
+                                <!--End of col-->
+                                <div class="col-sm">
+                                    <div class="form-group form-group-sm">
+                                        <label class="mb-1 form-control-label sm-font">Mother Dhoto</label>
+                                        <input class="form-control-file form-control-sm border-info" type="file" name=""
+                                            value="">
+                                    </div>
+                                </div>
+                                <!--End of col-->
+                            </div>
+                            <!--End of row-->
+                            <div class="row sm-font pb-3">
+                                <div class="col">
+                                    <label class="pr-3">If Guardian Is<span class="text-danger">*</span></label>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label"><input class="form-check-input" type="radio"
+                                                name="Guardian" value="">Father</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label"><input class="form-check-input" type="radio"
+                                                name="Guardian" value="">Mother</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label"><input class="form-check-input" type="radio"
+                                                name="Guardian" value="">Other</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <div class="col-sm">
+                                    <div class="form-group form-group-sm">
+                                        <label class="mb-1 form-control-label sm-font">Guardian Name<span
+                                                class="text-danger">*</span></label>
+                                        <input class="form-control form-control-sm border-info" type="text" name=""
+                                            value="">
+                                    </div>
+                                </div>
+                                <!--End of col-->
+                                <div class="col-sm">
+                                    <div class="form-group form-group-sm">
+                                        <label class="mb-1 form-control-label sm-font">Guardian Relation</label>
+                                        <input class="form-control form-control-sm border-info" type="text" name=""
+                                            value="">
+                                    </div>
+                                </div>
+                                <!--End of col-->
+                                <div class="col-sm">
+                                    <div class="form-group form-group-sm">
+                                        <label class="mb-1 form-control-label sm-font">Guardian Email</label>
+                                        <input class="form-control form-control-sm border-info" type="text" name=""
+                                            value="">
+                                    </div>
+                                </div>
+                                <!--End of col-->
+                                <div class="col-sm ">
+                                    <div class="form-group form-group-sm">
+                                        <label class="mb-1 form-control-label sm-font">Guardian Photo<span
+                                                class="text-danger">*</span></label>
+                                        <input class="form-control-file form-control-sm border-info" type="file" name=""
+                                            value="">
+                                    </div>
+                                </div>
+                                <!--End of col-->
+                            </div>
+                            <!--End of row-->
+                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="form-group form-group-sm">
+                                        <label class="mb-1 form-control-label sm-font">Guardian Phone<span
+                                                class="text-danger">*</span></label>
+                                        <input class="form-control form-control-sm border-info" type="text" name=""
+                                            value="">
+                                    </div>
+                                </div>
+                                <!--End of col-->
+                                <div class="col-sm">
+                                    <div class="form-group form-group-sm">
+                                        <label class="mb-1 form-control-label sm-font">Guardian Occupation</label>
+                                        <input class="form-control form-control-sm border-info" type="text" name=""
+                                            value="">
+                                    </div>
+                                </div>
+                                <!--End of col-->
+                                <div class="col-sm col-md-6">
+                                    <div class="form-group form-group-sm">
+                                        <label class="mb-1 form-control-label sm-font">Guardian Address</label>
+                                        <textarea class="form-control form-control-sm border-info"></textarea>
+                                    </div>
+                                </div>
+                                <!--End of col-->
+                            </div>
+                            <!--End of Row-->
+                        </main>
+                        <!--end of main-->
+                    </div>
+                    <!--End of container-->
+                </div>
+                <!--End of parent_detailse-->
+                <div class="row mx-0 my-5 add_more_detailse" name="add_more_detailse">
+                    <div class="container">
+                        <hader class="acc_head" style="cursor: pointer">
+                            <div class="row">
+                                <div class="col">
+                                    <h5 class="m-2">Additional informaion</h5>
+                                </div>
+                                <div class="col text-right py-2">
+                                    <i class=" fa fa-plus"></i>
+                                </div>
+                            </div>
+                        </hader>
+                        <!--End of header-->
+                        <div class="acc_pannel">
+                            <div class="container my-4 custom-shadow">
+                                <hader>
+                                    <div class="row">
+                                        <div class="col" style="background: #f5f9d3;">
+                                            <h6 class="m-2">Student Address Deatilse</h6>
+                                        </div>
+                                    </div>
+                                </hader>
+                                <!---End of header-->
+                                <main>
+                                    <div class="row py-3">
+                                        <div class="col-sm">
+                                            <div class="from-check pb-3">
+                                                <input type="checkbox" name="" value="">
+                                                <label class=" form-check-label sm-font">If Guardian Address
+                                                    is Current Address</label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="mb-1 form-control-label sm-font">Current Address</label>
+                                                <textarea class="form-control  border-info"></textarea>
+                                            </div>
+                                        </div>
+                                        <!--End of col-->
+                                        <div class="col-sm">
+                                            <div class="from-check pb-3">
+                                                <input type="checkbox" name="" value="">
+                                                <label class=" form-check-label sm-font">If Permanent Address is Current
+                                                    Address</label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="mb-1 form-control-label sm-font">Current Address</label>
+                                                <textarea class="form-control  border-info"></textarea>
+                                            </div>
+                                        </div>
+                                        <!--End of col-->
+                                    </div>
+                                    <!--End of row-->
+                                </main>
+                                <!--end of main-->
+                            </div>
+                            <!--End of Container-->
+                            <div class="container my-4 custom-shadow">
+                                <hader>
+                                    <div class="row">
+                                        <div class="col" style="background: #f5f9d3;">
+                                            <h6 class="m-2">Miscellaneous Detailse</h6>
+                                        </div>
+                                    </div>
+                                </hader>
+                                <!---End of header-->
+                                <main class="py-3">
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <div class="form-group form-group-sm">
+                                                <label class="mb-1 form-control-label sm-font">Bank Account
+                                                    Number</label>
+                                                <input class="form-control form-control-sm border-info" type="text"
+                                                    name="" value="">
+                                            </div>
+                                        </div>
+                                        <!--End of col-->
+                                        <div class="col-sm">
+                                            <div class="form-group form-group-sm">
+                                                <label class="mb-1 form-control-label sm-font">Bank Name</label>
+                                                <input class="form-control form-control-sm border-info" type="text"
+                                                    name="" value="">
+                                            </div>
+                                        </div>
+                                        <!--End of col-->
+                                        <div class="col-sm">
+                                            <div class="form-group form-group-sm">
+                                                <label class="mb-1 form-control-label sm-font">IFSC Code</label>
+                                                <input class="form-control form-control-sm border-info" type="text"
+                                                    name="" value="">
+                                            </div>
+                                        </div>
+                                        <!--End of col-->
+                                    </div>
+                                    <!--End of row-->
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <div class="form-group form-group-sm">
+                                                <label class="mb-1 form-control-label sm-font">National Identification
+                                                    Number</label>
+                                                <input class="form-control form-control-sm border-info" type="text"
+                                                    name="" value="">
+                                            </div>
+                                        </div>
+                                        <!--End of col-->
+                                        <div class="col-sm">
+                                            <div class="form-group form-group-sm">
+                                                <label class="mb-1 form-control-label sm-font">Local Identification
+                                                    Number</label>
+                                                <input class="form-control form-control-sm border-info" type="text"
+                                                    name="" value="">
+                                            </div>
+                                        </div>
+                                        <!--End of col-->
+                                        <div class="col-sm sm-font pt-2">
+                                            <label class="mb-1 form-control-label ">RET</label>
+                                            <div class="form-group">
+
+                                                <div class="from-check form-check-inline">
+                                                    <input class="form-check-input " type="radio" name="ret" value="">
+                                                    <label class="form-check-label">Yes</label>
+                                                </div>
+                                                <div class="from-check form-check-inline">
+                                                    <input class="form-check-input " type="radio" name="ret" value=""
+                                                        checked>
+                                                    <label class="form-check-label">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--End of col-->
+                                    </div>
+                                    <!--End of row-->
+                                    <div class="row">
+                                        <div class="col-sm">
+
+                                            <div class="form-group">
+                                                <label class="mb-1 form-control-label sm-font">Previous School
+                                                    Details</label>
+                                                <textarea class="form-control  border-info"></textarea>
+                                            </div>
+                                        </div>
+                                        <!--End of col-->
+                                        <div class="col-sm">
+
+                                            <div class="form-group">
+                                                <label class="mb-1 form-control-label sm-font">Note</label>
+                                                <textarea class="form-control  border-info"></textarea>
+                                            </div>
+                                        </div>
+                                        <!--End of col-->
+                                    </div>
+                                    <!--End of row-->
+                                </main>
+                                <!--end of main-->
+                            </div>
+                            <!--End of Container-->
+
+
+                        </div>
+                        <!--End of outer Container-->
+                    </div>
+                    <!--End of Acc_pannel-->
+                </div>
+                <!--End of add more detailse-->
+                <div class="row text-right ">
+                    <div class="col mr-3">
+                        <button class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </div>
+            <!--End of container-->
+        </div>
+        <!--End of col-->
+    </div>
+    <!--End of dashbord-->
+    <script src="../../script/aos.js"></script>
+    <script src="../../script/bootstrap.min.js"></script>
+    <script src="../../script/jquery.min.js"></script>
+    <script type="text/javascript" src="../../script/script.js"></script>
+    <script type="text/javascript">
+
+    </script>
+</body>
+
+</html>
