@@ -71,6 +71,15 @@
             });
         }
 
+        //pannel opener by handelin many page
+        function open_pannel() {
+            $('.controled_pannel').hide();
+            $('.handel').click(function () {
+                $('.controled_pannel').show();
+
+            });
+        }
+
         $(document).ready(function() {
             //add_staff page pannel togglear
             pannel_opener();
@@ -78,6 +87,8 @@
             setting_btn_toggler();
             //System setting page's logo to input
             change_logo()
+            //pannel openerin many page
+            open_pannel()
             /*----------------------------staff page accordination----------------------*/
             
             $('.accordination').each(function() {
