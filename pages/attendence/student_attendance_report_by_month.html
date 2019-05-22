@@ -301,53 +301,7 @@
     <script src="../../script/bootstrap.min.js"></script>
     <script src="../../script/jquery.min.js"></script>
     <script type="text/javascript" src="../../script/script.js"></script>
-    <script>
-            function no_of_day_in_month() {
-                $('.staff_admission_report').hide();
-                var current_year = new Date().getFullYear(),
-                    start_year = current_year - 5,
-                    end_year = current_year + 5;
-                for (var i = start_year; i <= end_year; i++) {
-                    var element = document.createElement('option');
-                    element.innerHTML = i;
-                    element.setAttribute("option", i);
-                    document.querySelector('.year').appendChild(element);
-                }
     
-    
-                var selected_month, selected_year;
-                $('.month').change(function () {
-                    selected_month = $(this).val();
-                });
-                $('.year').change(function () {
-                    selected_year = $(this).val();
-                });
-    
-                $('.get_date').click(function () {
-                    console.log(selected_month);
-                    if (selected_month != null || selected_year != null) {
-                        //console.log(selected_month+","+selected_year);
-                        var no_day = new Date(selected_year, selected_month, 0).getDate();
-                        var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    
-                        for (var i = 1; i <= no_day; i++) {
-                            console.log(i);
-                            var th = document.createElement('th');
-                            th.innerHTML = i;
-                            th.setAttribute("scope", "col");
-                            document.querySelector('.date_cont').appendChild(th);
-                        }
-                        $('.staff_admission_report').show();  
-                    } else {
-                        alert('select values');
-                    }
-                });
-            }
-            $('document').ready(function () {
-                no_of_day_in_month();
-    
-            });
-        </script>
 </body>
 
 </html>
