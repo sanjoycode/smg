@@ -14,7 +14,7 @@
         //pannel will showne when head is clicked
         function pannel_opener() {
             $('.acc_pannel').hide();
-            
+
 
             $('.acc_head').click(function () {
                 if ($('.acc_pannel').hasClass('active')) {
@@ -24,7 +24,7 @@
                     $('.acc_head').find('i').addClass('fa-plus');
                 } else {
                     $('.acc_pannel').addClass('active').slideDown();
-                    
+
                     $('.acc_head').find('i').removeClass('fa-plus');
                     $('.acc_head').find('i').addClass('fa-minus');
                 }
@@ -86,12 +86,15 @@
             var current_year = new Date().getFullYear(),
                 start_year = current_year - 5,
                 end_year = current_year + 5;
-            for (var i = start_year; i <= end_year; i++) {
-                var element = document.createElement('option');
-                element.innerHTML = i;
-                element.setAttribute("option", i);
-                document.querySelector('.year').appendChild(element);
+            if ($('.dashbord').find('.year').hasClass('year')) {
+                for (var i = start_year; i <= end_year; i++) {
+                    var element = document.createElement('option');
+                    element.innerHTML = i;
+                    element.setAttribute("option", i);
+                    document.querySelector('.year').appendChild(element);
+                }
             }
+
 
 
             var selected_month, selected_year;
@@ -107,23 +110,20 @@
                 if (selected_month != null || selected_year != null) {
                     //console.log(selected_month+","+selected_year);
                     var no_day = new Date(selected_year, selected_month, 0).getDate();
-                    var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-
                     for (var i = 1; i <= no_day; i++) {
-                        console.log(i);
                         var th = document.createElement('th');
                         th.innerHTML = i;
                         th.setAttribute("scope", "col");
                         document.querySelector('.date_cont').appendChild(th);
                     }
-                    $('.staff_admission_report').show();  
+                    $('.staff_admission_report').show();
                 } else {
                     alert('select values');
                 }
             });
         }
 
-        $(document).ready(function() {
+        $(document).ready(function () {
             //add_staff page pannel togglear
             pannel_opener();
             ///System setting page's button toggler
@@ -135,19 +135,18 @@
             //findng no of days in month and finding years
             no_of_day_in_month();
             /*----------------------------staff page accordination----------------------*/
-            
-            $('.accordination').each(function() {
+
+            $('.accordination').each(function () {
 
                 //hiding pannel by default
                 $(".accordination-pannel").hide();
 
                 // bind click event handeler
 
-                $(".accordination-head").click(function(e) {
+                $(".accordination-head").click(function () {
                     // get elements
                     var thisAccordination = $(this).parent().parent();
                     var thisHead = $(this);
-                    var thisPlus = $(thisHead).hasClass("accordinationPlus");
                     var thisPannel = $(thisHead).siblings(".accordination-pannel");
 
                     //only current accordination will show
@@ -175,13 +174,13 @@
                     }
                 });
             });
-            
+
             /*------------------------------------------------------*/
 
             $('.navigation .arrow').hide();
             $('.navigation .dropdown_pannel').hide();
 
-            $('.navigation .dropdown').click(function(e) {
+            $('.navigation .dropdown').click(function () {
                 if ($('.navigation .arrow').hasClass('open')) {
                     $('.navigation .arrow').fadeOut();
                     $('.navigation .dropdown_pannel').fadeOut();
@@ -207,7 +206,7 @@
             sidebar();
 
             //event is for checking view port compatibility visual effect on the fly for testing
-            $(window).resize(function() {
+            $(window).resize(function () {
                 sidebar();
             });
 
@@ -215,7 +214,7 @@
             // since hasclass function is not working thats why i use even odd checking for toggling
             var count = 0;
 
-            $('.toggle').click(function() {
+            $('.toggle').click(function () {
 
                 count++;
                 console.log(count);
@@ -240,7 +239,7 @@
 
             //open up tree_pannel  when  tree-view is clickd
             // and toggle between right-arrow-icon and down arrow icon.
-            $('.tree_head', this).click(function(e) {
+            $('.tree_head', this).click(function () {
 
 
 
@@ -275,11 +274,11 @@
 
             //focus effect on tree-view
 
-            $('.tree_head').mouseout(function() {
+            $('.tree_head').mouseout(function () {
                 $(this).addClass('focus');
             });
 
-            $('.tree_head').mouseover(function() {
+            $('.tree_head').mouseover(function () {
                 $('.sidebar_accordination').find('.tree_head').not(this).removeClass('focus');
             });
 
