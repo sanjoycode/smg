@@ -51,6 +51,9 @@
     font-family: lato-bolditelic;
     font-size: 13px;
 }
+.f-20{
+    font-size: 20px;
+}
 
 .custom-shadow{
     box-shadow: 0px 0px 5px gray ;
