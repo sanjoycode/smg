@@ -123,6 +123,12 @@
             });
         }
 
+        //show current session date
+        function current_session(){
+            var current_year = (new Date).getFullYear();
+            return current_year +"-"+parseInt(current_year + 1) ;
+        }
+
         $(document).ready(function () {
             //add_staff page pannel togglear
             pannel_opener();
@@ -134,6 +140,8 @@
             open_pannel();
             //findng no of days in month and finding years
             no_of_day_in_month();
+            //showing currentsession date on load
+            $('.ins_session').text(current_session());
             /*----------------------------staff page accordination----------------------*/
 
             $('.accordination').each(function () {
