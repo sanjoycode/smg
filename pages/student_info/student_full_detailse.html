@@ -2,7 +2,11 @@
 <html lang="en-US">
 
 <head>
-    <!-- Required meta tags -->
+    <meta name="Author" content="Soumitra Patra">
+    <meta name="other forntend collabortator" content="Snjoy Giri">
+    <meta name="Project Titel" content="School menagement system">
+    <meta name="Description"
+        content="This projet is build for learning hard code html css js and jquery.also for learning git colaboration marges ect.">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
@@ -11,6 +15,9 @@
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../../css/icofont/icofont.min.css">
     <title>User pannel</title>
+    <style type="text/css">
+
+    </style>
 </head>
 
 <body>
@@ -37,9 +44,13 @@
                                 style="width: 30px;height:30px;cursor: pointer;">
                             <i class=" arrow icofont-caret-up"></i>
                         </div>
+                        <!--End of d-flex-->
                     </div>
+                    <!--End of col-->
                 </div>
+                <!--End of row-->
             </div>
+            <!--End of container-->
             <div class="dropdown_pannel p-0">
                 <div class="container">
                     <div class="row pt-2 pt-md-2 pt-lg-3 px-3 px-sm-0 px-lg-3">
@@ -52,23 +63,25 @@
                         </div>
                     </div>
                     <div class="row p-3 text-center">
-                        <a href="#" class="col rounded-left bg-warning p-1"
+                        <a href="../hr/Staff_detailse.html" class="col rounded-left bg-warning p-1"
                             style="cursor: pointer;text-decoration: none;">
                             Profile
                         </a>
-                        <a href="#" class="col ml-1 rounded-right bg-warning p-1"
+                        <a href="../../login.html" class="col ml-1 rounded-right bg-warning p-1"
                             style="cursor: pointer;text-decoration: none;">
                             Logout
                         </a>
                     </div>
                 </div>
             </div>
+            <!--End of profile dropdown pannel-->
         </nav>
     </div>
-    <div class="container-fludi dashbord">
+    <!--End of position relative-->
+    <div class="container-fludi">
         <div class="col-md-3 d-md-block bg-dark sidebar sticky-top p-0">
             <ul class="p-0 sidebar_accordination">
-                <p>Current session :2019-2020</p>
+                <p>Current session :<span class="ins_session"></span></p>
                 <li>
                     <div class="tree_head">
                         <div href="#">
@@ -78,11 +91,14 @@
                         </div>
                     </div>
                     <ul class="tree_pannel">
-                        <li class="icofont-double-right"><a href="student_info(not using).html">Student Detailse</a>
+                        <li class="icofont-double-right"><a href="student_detailse.html">Student
+                                Detailse</a></li>
+                        <li class="icofont-double-right"><a href="student_history.html">Student
+                                History</a></li>
+                        <li class="icofont-double-right"><a href="student_admission.html">Admission</a>
                         </li>
-                        <li class="icofont-double-right"><a href="student_history.html">Student History</a></li>
-                        <li class="icofont-double-right"><a href="#">Admission</a></li>
-                        <li class="icofont-double-right"><a href="#">Timetable</a></li>
+                        <li class="icofont-double-right"><a href="student_ setting.html">Student
+                                Credientials</a></li>
                     </ul>
                 </li>
                 <li>
@@ -94,7 +110,20 @@
                         </div>
                     </div>
                     <ul class="tree_pannel">
-                        <li class="icofont-double-right"><a href="#">Student Attendance</a></li>
+                        <li class="icofont-double-right"><a href="../attendence/student_attendance.html">Student
+                                Attendance</a></li>
+                        <li class="icofont-double-right"><a
+                                href="../attendence/student_attendance_report_by_date.html">Student Attend
+                                by Day</a>
+                        </li>
+                        <li class="icofont-double-right"><a
+                                href="../attendence/student_attendance_report_by_month.html">Student
+                                Attend by Month</a>
+                        </li>
+                        <li class="icofont-double-right"><a href="../attendence/staff_attendance.html">Staff
+                                Attendance</a></li>
+                        <li class="icofont-double-right"><a href="../attendence/staff_attendance_by_month.html">Staff
+                                Attendance Report</a></li>
                     </ul>
                 </li>
                 <li>
@@ -112,8 +141,10 @@
                         <li class="icofont-double-right"><a href="../academic/add_section.html">Add section</a></li>
                         <li class="icofont-double-right"><a href="../academic/add_subject.html">Add subject</a></li>
                         <li class="icofont-double-right"><a href="../academic/asign_subject.html">Asign subject</a></li>
-                        <li class="icofont-double-right"><a href="../academic/asign_classteacher.html">Asign class
-                                Teacher</a></li>
+                        <li class="icofont-double-right"><a href="../academic/asign_classteacher.html">Asign
+                                classteacher</a></li>
+                        <li class="icofont-double-right"><a href="../academic/View_timetable_student.html">Timetable</a>
+                        </li>
                     </ul>
                 </li>
                 <li>
@@ -126,9 +157,7 @@
                     </div>
                     <ul class="tree_pannel">
                         <li class="icofont-double-right"><a href="../hr/add_staff.html">Add Staff</a></li>
-                        <li class="icofont-double-right"><a href="../hr/attendance.html">Attendance</a></li>
-                        <li class="icofont-double-right"><a href="../hr/attendance_report.html">Attendance report</a>
-                        </li>
+                        <li class="icofont-double-right"><a href="../hr/Staff_detailse.html">Staff Detailse</a></li>
                         <li class="icofont-double-right"><a href="../hr/deperment.html">Department</a></li>
                         <li class="icofont-double-right"><a href="../hr/designtation.html">Designation</a></li>
                     </ul>
@@ -145,6 +174,7 @@
                         <li class="icofont-double-right"><a href="../transport/add_wahicale.html">Add Vehicale</a></li>
                         <li class="icofont-double-right"><a href="../transport/assign_vehicale.html">Asign Vehicale</a>
                         </li>
+                        <li class="icofont-double-right"><a href="../transport/create_route.html">Create Route</a></li>
                     </ul>
                 </li>
                 <li>
@@ -176,7 +206,9 @@
                     </ul>
                 </li>
             </ul>
+            <!--End of outer UL-->
         </div>
+        <!--End of Sideber-->
         <div class="col-xs-12 col-md-9 p-3 dashbord float-md-right">
             <h3 class="mt-4">Student Detailse</h3>
             <div class="container pb-5 bg-white background rounded">
@@ -184,7 +216,7 @@
                     <div class="container m-3 border border-secondary rounded">
                         <header>
                             <div class="row " style="background: #cdd2a6;">
-                                <div class="col" >
+                                <div class="col">
                                     <h6>Student Detailse</h6>
                                 </div>
                             </div>
@@ -196,7 +228,8 @@
                                         <tr>
                                             <td>Student name</td>
                                             <td>Jony Test</td>
-                                            <td rowspan="4" class="text-center"><img class="img-fluid" style="width:90px" src="../../myimage/dp.png"></td>
+                                            <td rowspan="4" class="text-center"><img class="img-fluid"
+                                                    style="width:90px" src="../../myimage/dp.png"></td>
                                         </tr>
                                         <tr>
                                             <td>Roll No</td>
@@ -259,7 +292,7 @@
                                 </div>
                             </div>
                         </main>
-                        
+
                     </div>
                     <!--End of inner container-->
                 </div>
@@ -268,7 +301,7 @@
                     <div class="container m-3 border border-secondary  rounded">
                         <header>
                             <div class="row " style="background: #cdd2a6;">
-                                <div class="col" >
+                                <div class="col">
                                     <h6>Adderss Detailse</h6>
                                 </div>
                             </div>
@@ -297,7 +330,7 @@
                     <div class="container m-3 border border-secondary  rounded">
                         <header>
                             <div class="row " style="background: #cdd2a6;">
-                                <div class="col" >
+                                <div class="col">
                                     <h6>Gurdian Detailse</h6>
                                 </div>
                             </div>
@@ -309,42 +342,44 @@
                                         <tr>
                                             <td>Father name</td>
                                             <td>Oliver Test</td>
-                                            <td rowspan="4" class="text-center"><img class="img-fluid" style="width:90px" src="../../myimage/dp.png"></td>
+                                            <td rowspan="4" class="text-center"><img class="img-fluid"
+                                                    style="width:90px" src="../../myimage/dp.png"></td>
                                         </tr>
                                         <tr>
                                             <td>Father Phone</td>
                                             <td>9852637415</td>
-                                            
+
                                         </tr>
                                         <tr>
                                             <td>Occupation</td>
                                             <td>Self Employed</td>
-                                            
+
                                         </tr>
                                         <tr>
                                             <td>Mother Name</td>
                                             <td>Susan test</td>
-                                            
+
                                         </tr>
                                         <tr>
                                             <td>Mother phone</td>
                                             <td>1008745685</td>
-                                            <td rowspan="4" class="text-center"><img class="img-fluid" style="width:90px" src="../../myimage/dp.png"></td>
+                                            <td rowspan="4" class="text-center"><img class="img-fluid"
+                                                    style="width:90px" src="../../myimage/dp.png"></td>
                                         </tr>
                                         <tr>
                                             <td>Mother Occupation</td>
                                             <td>House wife</td>
-                                            
+
                                         </tr>
                                         <tr>
                                             <td>Gurdian Name</td>
                                             <td>Oliver Test</td>
-                                            
+
                                         </tr>
                                         <tr>
                                             <td>Gurdian Email</td>
                                             <td>Example.info@gmail.com</td>
-                                            
+
                                         </tr>
                                         <tr>
                                             <td>Gurdian Relation</td>
@@ -369,7 +404,7 @@
                                     </table>
                                 </div>
                             </div>
-                        </main> 
+                        </main>
                     </div>
                     <!--End of inner container-->
                 </div>
@@ -378,7 +413,7 @@
                     <div class="container m-3 border border-secondary  rounded">
                         <header>
                             <div class="row " style="background: #cdd2a6;">
-                                <div class="col" >
+                                <div class="col">
                                     <h6>Miscellaneous Detailse</h6>
                                 </div>
                             </div>
@@ -413,12 +448,13 @@
                                         </tr>
                                         <tr>
                                             <td>Note</td>
-                                            <td>Loren aksdj ks dsjyf fjed in sj ifte lifej dhfsvnks dsjyf fjed in sj ifte lifej .</td>
+                                            <td>Loren aksdj ks dsjyf fjed in sj ifte lifej dhfsvnks dsjyf fjed in sj
+                                                ifte lifej .</td>
                                         </tr>
                                     </table>
                                 </div>
                             </div>
-                        </main> 
+                        </main>
                     </div>
                     <!--End of inner container-->
                 </div>
