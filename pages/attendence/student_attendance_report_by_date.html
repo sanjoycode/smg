@@ -208,18 +208,27 @@
         </div>
         <!--End of Sideber-->
         <div class="col-xs-12 col-md-9 p-3 dashbord float-md-right">
-            <div class="container mt-3 background bg-white rounded pb-3">
+            <div class="container">
                 <div class="row">
-                    <div class="col-12 pb-3">
-                        <span></span>
-                        <h4>Student Attendance Report</h4>
+                    <div class="col-12 px-0 py-3">
+                        <h3>Student Attendance Report By Date</h3>
                     </div>
+                </div>
+            </div>
+            <div class="container background bg-white rounded pb-3">
+                <div class="row">
+                    <div class="col-12 p-3">
+                        <p class="text-muted m-0 f-20">
+                            Search Craiteria
+                        </p>
+                    </div>
+                    <!--End of col-->
                 </div>
                 <div class="row">
                     <div class="col-md-4 col-sm-12">
                         <div class="form-group">
-                            <p class="form label text-muted mb-2">class<span class="text-warning">*</span></p>
-                            <select class="form-control border-primary">
+                            <p class="form label text-muted mb-2 sm-font">class<span class="text-warning">*</span></p>
+                            <select class="form-control form-control-sm border-primary">
                                 <option>select1</option>
                                 <option>select2</option>
                                 <option>select3</option>
@@ -228,8 +237,9 @@
                     </div>
                     <div class="col-md-4 col-sm-12">
                         <div class="form-group ">
-                            <p class="form label text-muted mb-2">Sections<span class="text-warning">*</span></p>
-                            <select class="form-control border-primary">
+                            <p class="form label text-muted mb-2 sm-font">Sections<span class="text-warning">*</span>
+                            </p>
+                            <select class="form-control form-control-sm border-primary">
                                 <option>A</option>
                                 <option>B</option>
                                 <option>C</option>
@@ -238,9 +248,10 @@
                     </div>
                     <div class="col-md-4 col-sm-12">
                         <div class="form-group ">
-                            <p class="form label text-muted mb-2">Attendance Date<span class="text-warning">*</span>
+                            <p class="form label text-muted mb-2 sm-font">Attendance Date<span
+                                    class="text-warning">*</span>
                             </p>
-                            <input type="Date" name="" class="form-control border-primary">
+                            <input type="Date" name="" class="form-control form-control-sm border-primary">
                         </div>
                     </div>
                 </div>
@@ -255,14 +266,17 @@
             <!-- ===============================attendance list====================================== -->
             <div class="controled_pannel container mt-5 background bg-white rounded">
                 <div class="row mb-2">
-                    <div class="col-12">
-                        <h5>Attendance list</h5>
+                    <div class="col-12 p-3">
+                        <p class="text-muted m-0 f-20">
+                            Attendance list
+                        </p>
                     </div>
+                    <!--End of col-->
                 </div>
                 <div class="row">
                     <div class="col-6 mb-3">
                         <div class="input-group input-group-sm">
-                            <input class="form-control w-25" type="text" name="" placeholder="search">
+                            <input class="form-control border-primary w-25" type="text" name="" placeholder="search">
                             <div class="input-group-append">
                                 <button class="btn btn-outline-dark">search</button>
                             </div>
