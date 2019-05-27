@@ -2,7 +2,11 @@
 <html lang="en-US">
 
 <head>
-    <!-- Required meta tags -->
+    <meta name="Author" content="Soumitra Patra">
+    <meta name="other forntend collabortator" content="Snjoy Giri">
+    <meta name="Project Titel" content="School menagement system">
+    <meta name="Description"
+        content="This projet is build for learning hard code html css js and jquery.also for learning git colaboration marges ect.">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
@@ -11,6 +15,9 @@
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../../css/icofont/icofont.min.css">
     <title>User pannel</title>
+    <style type="text/css">
+
+    </style>
 </head>
 
 <body>
@@ -37,9 +44,13 @@
                                 style="width: 30px;height:30px;cursor: pointer;">
                             <i class=" arrow icofont-caret-up"></i>
                         </div>
+                        <!--End of d-flex-->
                     </div>
+                    <!--End of col-->
                 </div>
+                <!--End of row-->
             </div>
+            <!--End of container-->
             <div class="dropdown_pannel p-0">
                 <div class="container">
                     <div class="row pt-2 pt-md-2 pt-lg-3 px-3 px-sm-0 px-lg-3">
@@ -52,23 +63,25 @@
                         </div>
                     </div>
                     <div class="row p-3 text-center">
-                        <a href="#" class="col rounded-left bg-warning p-1"
+                        <a href="../hr/Staff_detailse.html" class="col rounded-left bg-warning p-1"
                             style="cursor: pointer;text-decoration: none;">
                             Profile
                         </a>
-                        <a href="#" class="col ml-1 rounded-right bg-warning p-1"
+                        <a href="../../login.html" class="col ml-1 rounded-right bg-warning p-1"
                             style="cursor: pointer;text-decoration: none;">
                             Logout
                         </a>
                     </div>
                 </div>
             </div>
+            <!--End of profile dropdown pannel-->
         </nav>
     </div>
-    <div class="container-fludi dashbord">
+    <!--End of position relative-->
+    <div class="container-fludi">
         <div class="col-md-3 d-md-block bg-dark sidebar sticky-top p-0">
             <ul class="p-0 sidebar_accordination">
-                <p>Current session :2019-2020</p>
+                <p>Current session :<span class="ins_session"></span></p>
                 <li>
                     <div class="tree_head">
                         <div href="#">
@@ -78,12 +91,14 @@
                         </div>
                     </div>
                     <ul class="tree_pannel">
-                        <li class="icofont-double-right"><a href="../student_info/student_info(not using).html">Student
+                        <li class="icofont-double-right"><a href="student_detailse.html">Student
                                 Detailse</a></li>
-                        <li class="icofont-double-right"><a href="../student_info/student_history.html">Student
+                        <li class="icofont-double-right"><a href="student_history.html">Student
                                 History</a></li>
-                        <li class="icofont-double-right"><a href="../#">Admission</a></li>
-                        <li class="icofont-double-right"><a href="../#">Timetable</a></li>
+                        <li class="icofont-double-right"><a href="student_admission.html">Admission</a>
+                        </li>
+                        <li class="icofont-double-right"><a href="student_ setting.html">Student
+                                Credientials</a></li>
                     </ul>
                 </li>
                 <li>
@@ -95,7 +110,20 @@
                         </div>
                     </div>
                     <ul class="tree_pannel">
-                        <li class="icofont-double-right"><a href="../#">Student Attendance</a></li>
+                        <li class="icofont-double-right"><a href="../attendence/student_attendance.html">Student
+                                Attendance</a></li>
+                        <li class="icofont-double-right"><a
+                                href="../attendence/student_attendance_report_by_date.html">Student Attend
+                                by Day</a>
+                        </li>
+                        <li class="icofont-double-right"><a
+                                href="../attendence/student_attendance_report_by_month.html">Student
+                                Attend by Month</a>
+                        </li>
+                        <li class="icofont-double-right"><a href="../attendence/staff_attendance.html">Staff
+                                Attendance</a></li>
+                        <li class="icofont-double-right"><a href="../attendence/staff_attendance_by_month.html">Staff
+                                Attendance Report</a></li>
                     </ul>
                 </li>
                 <li>
@@ -113,8 +141,10 @@
                         <li class="icofont-double-right"><a href="../academic/add_section.html">Add section</a></li>
                         <li class="icofont-double-right"><a href="../academic/add_subject.html">Add subject</a></li>
                         <li class="icofont-double-right"><a href="../academic/asign_subject.html">Asign subject</a></li>
-                        <li class="icofont-double-right"><a href="../academic/asign_classteacher.html">Asign class
-                                Teacher</a></li>
+                        <li class="icofont-double-right"><a href="../academic/asign_classteacher.html">Asign
+                                classteacher</a></li>
+                        <li class="icofont-double-right"><a href="../academic/View_timetable_student.html">Timetable</a>
+                        </li>
                     </ul>
                 </li>
                 <li>
@@ -127,9 +157,7 @@
                     </div>
                     <ul class="tree_pannel">
                         <li class="icofont-double-right"><a href="../hr/add_staff.html">Add Staff</a></li>
-                        <li class="icofont-double-right"><a href="../hr/attendance.html">Attendance</a></li>
-                        <li class="icofont-double-right"><a href="../hr/attendance_report.html">Attendance report</a>
-                        </li>
+                        <li class="icofont-double-right"><a href="../hr/Staff_detailse.html">Staff Detailse</a></li>
                         <li class="icofont-double-right"><a href="../hr/deperment.html">Department</a></li>
                         <li class="icofont-double-right"><a href="../hr/designtation.html">Designation</a></li>
                     </ul>
@@ -143,9 +171,10 @@
                         </div>
                     </div>
                     <ul class="tree_pannel">
-                        <li class="icofont-double-right"><a href="add_wahicale.html">Add Vehicale</a></li>
-                        <li class="icofont-double-right"><a href="assign_vehicale.html">Asign Vehicale</a>
+                        <li class="icofont-double-right"><a href="../transport/add_wahicale.html">Add Vehicale</a></li>
+                        <li class="icofont-double-right"><a href="../transport/assign_vehicale.html">Asign Vehicale</a>
                         </li>
+                        <li class="icofont-double-right"><a href="../transport/create_route.html">Create Route</a></li>
                     </ul>
                 </li>
                 <li>
@@ -177,21 +206,22 @@
                     </ul>
                 </li>
             </ul>
+            <!--End of outer UL-->
         </div>
+        <!--End of Sideber-->
         <div class="col-xs-12 col-md-9 p-3 dashbord float-md-right">
-            <div class="container mt-5">
+            <div class="container">
                 <div class="row">
-                    <div class="col-12">
-                        <span><i class="fas fa-car fa-2x mr-2"></i></span>
-                        <h4 class="d-inline-block">Transeport</h4>
+                    <div class="col-12 px-0 py-3">
+                        <h3>Add Vehicle</h3>
                     </div>
                 </div>
             </div>
-            <div class="container mt-3 pb-3">
+            <div class="container pb-3">
                 <div class="row">
                     <div class="col-md-4 col-sm-12 bg-white background rounded">
-                        <h5 class="mb-4 pt-3">Add Vehicle</h5>
-                        <div class="form-group ">
+                            <p class="my-3 text-muted "><span class="pb-1  border-bottom border-secondary">Add Vehicale</span></p>
+                        <div class="form-group pt-3">
                             <p class="text-muted form-control-label mb-2">Vechine number</p>
                             <input type="text" name="" class="form-control form-control-sm border-dark">
                         </div>
@@ -217,9 +247,9 @@
                         </div>
                         <div class="form-group">
                             <p class="text-muted form-control-label mb-2">Note </p>
-                            <textarea rows="4" class="form-control form-control-sm border-dark" ></textarea>
+                            <textarea rows="4" class="form-control form-control-sm border-dark"></textarea>
                         </div>
-                       
+
                         <div class="row">
                             <div class="col-12">
                                 <div class="justify-content-end d-flex my-3">
@@ -230,14 +260,15 @@
                     </div>
                     <div class="col-md-8 col-sm-12  ">
                         <div class="bg-white  background rounded ml-md-3 ml-sm-0 p-2">
-                            <div class="row mb-4 mt-2">
+                            <div class="row mt-2">
                                 <div class="col-12">
-                                    <h5 class="ml-2">Vehicle list</h5>
+                                        <p class="p-2 text-muted "><span class="pb-1  border-bottom border-secondary">Vehicale
+                                                list</span></p>
                                 </div>
                             </div>
-                            <div class="justify-content-between d-flex my-3 col-6">
+                            <div class="justify-content-between d-flex mb-3 col-6">
                                 <div class="input-group input-group-sm">
-                                    <input type="text" name="" class="form-control border-dark" placeholder="search">
+                                    <input type="text" name="" class="form-control border-primary" placeholder="search">
                                     <div class="input-group-append">
                                         <button class="btn btn-outline-dark">search</button>
                                     </div>
@@ -298,12 +329,18 @@
                     </div>
                 </div>
             </div>
+
         </div>
+        <!--End of dashbord-->
     </div>
+    <!--End of -->
     <script src="../../script/aos.js"></script>
     <script src="../../script/bootstrap.min.js"></script>
     <script src="../../script/jquery.min.js"></script>
     <script type="text/javascript" src="../../script/script.js"></script>
+    <script type="text/javascript">
+
+    </script>
 </body>
 
 </html>
